@@ -12,7 +12,8 @@ html {
 .main {
   max-width: 50rem;
   margin: auto;
-  padding: 3rem 3rem;
+  padding: 0 3rem;
+  padding-bottom: 3rem;
 }
 
 .titlebar {
@@ -20,7 +21,8 @@ html {
 }
 
 .navbar {
-  margin-top: 3rem;
+  display: flex;
+  gap: 1rem;
 }
 
 .navbar a {
@@ -35,10 +37,6 @@ a {
 
 a:hover {
   text-decoration: underline;
-}
-
-.navbar a {
-  margin-right: 1rem;
 }
 
 .content {

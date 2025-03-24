@@ -20,7 +20,7 @@ export default function Projects() {
           </p>
         </div>
       </div>
-      <div className="content">
+      <div style={{ marginTop: '3rem' }} className="content">
         <div className="left">
           <h3><a style={{ fontWeight: 'bold'}} className="social" href="https://arduvia.com">Arduvia</a></h3>
           May 2024 &mdash; December 2024
