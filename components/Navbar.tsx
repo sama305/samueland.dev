@@ -2,7 +2,11 @@
 
 import { usePathname } from "next/navigation";
 
-export default function Navbar() {
+interface NavbarProps {
+  className: string
+}
+
+export default function Navbar({ className }: NavbarProps) {
   const navBarLinks: Array<{
     label: string,
     to: string
@@ -29,12 +33,12 @@ export default function Navbar() {
   console.log(currentPage)
 
   return (
-    <div className="navbar">
+    <div className={className + " navbar"}>
       {navBarLinks.map(l => (
         <a
           key={l.label}
           href={l.to}
-          style={{ textDecoration: l.to === currentPage ? 'underline' : 'none'}}
+          style={{ textDecoration: l.to === currentPage ? 'underline' : ''}}
         >
           {l.label}
         </a>

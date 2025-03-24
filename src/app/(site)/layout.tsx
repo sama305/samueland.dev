@@ -17,12 +17,10 @@ export default function RootLayout({
       <body>
         <div className="main">
           <div className="content">
-            <div className="left titlebar">
-              <h1 style={{ lineHeight: '1.9rem'}}>Samuel Morgan Anderson</h1>
-            </div>
-            <div className="right">
-              <Navbar />
-            </div>
+            <h1 className="left" style={{ width: '20rem', lineHeight: '2rem'}}>
+              Samuel Morgan Anderson
+            </h1>
+            <Navbar className="right"/>
           </div>
           {children}
         </div>

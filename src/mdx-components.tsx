@@ -3,9 +3,6 @@ import type { MDXComponents } from 'mdx/types'
 export function useMDXComponents(components: MDXComponents): MDXComponents {
   return {
     ...components,
-    p: ({ children }) => (
-      <p style={{ marginBottom: '1rem' }}>{children}</p>
-    ),
     ul: ({ children }) => (
       <ul style={{ marginBottom: '1rem' }}>{children}</ul>
     ),

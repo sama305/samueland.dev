@@ -23,13 +23,15 @@ export default async function BlogPostPage({ params }: BlogPostParams) {
   return (
     <div>
       <div>
-        <div className="blogHeader">
+        <div>
           <h1 className='blogTitle'>{post.metadata.title}</h1>
-          <Link href={"/blog"}>&larr; Other posts</Link>
+          <p>Posted on {stringToDateString(post.metadata.date)}{post.metadata.updateDate ? `, last updated ${stringToDateString(post.metadata.updateDate)}` : ''}</p>
         </div>
-        <p>Posted on {stringToDateString(post.metadata.date)}{post.metadata.updateDate ? `, last updated ${stringToDateString(post.metadata.updateDate)}` : ''}</p>
         <div style={{ marginTop: '3rem'}}>
           <MDXRemote components={useMDXComponents({})} source={post.content} />
+        </div>
+        <div style={{ marginTop: '3rem'}}>
+          <Link className="right" href={"/blog"}>&larr; See other posts</Link>
         </div>
       </div>
     </div>
