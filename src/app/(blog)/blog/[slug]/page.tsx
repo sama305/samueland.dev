@@ -1,4 +1,5 @@
 import { getAllPostSlugs, getPostBySlug, stringToDateString } from '@/lib'
+import { useMDXComponents } from '@/mdx-components'
 import { MDXRemote } from 'next-mdx-remote/rsc'
 import Link from 'next/link'
 import { notFound } from 'next/navigation'
@@ -28,7 +29,7 @@ export default async function BlogPostPage({ params }: BlogPostParams) {
         </div>
         <p>Posted on {stringToDateString(post.metadata.date)}{post.metadata.updateDate ? `, last updated ${stringToDateString(post.metadata.updateDate)}` : ''}</p>
         <div style={{ marginTop: '3rem'}}>
-          <MDXRemote source={post.content} />
+          <MDXRemote components={useMDXComponents({})} source={post.content} />
         </div>
       </div>
     </div>
