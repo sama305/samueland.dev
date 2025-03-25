@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import PicoGame from '../../../../../components/PicoGame'
 
 interface GameParams {
@@ -12,6 +13,9 @@ export default async function GamePage({ params }: GameParams) {
   return (
     <div>
       <PicoGame gameName={gameName} />
+      <div style={{ marginTop: '1rem'}}>
+        <Link href={"/misc/games"}>&larr; See other games</Link>
+      </div>
     </div>
   )
 }
