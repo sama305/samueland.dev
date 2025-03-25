@@ -1,8 +1,8 @@
 export default function Projects() {
   return (
     <div>
-      <div className="content">
-        <div style={{ width: '15rem' }} >
+      <div className="content" style={{ gap: '0'}}>
+        <div style={{ width: '13rem' }} >
           <h3><a style={{ fontWeight: 'bold'}} className="social" href="https://librewrite.com">Librewrite.com</a></h3>
           Oct 2024 &mdash; Present
         </div>
@@ -20,8 +20,8 @@ export default function Projects() {
           </p>
         </div>
       </div>
-      <div style={{ marginTop: '3rem' }} className="content">
-        <div style={{ width: '15rem' }}>
+      <div className="content" style={{ gap: '0' }}>
+        <div style={{ width: '13rem' }}>
           <h3><a style={{ fontWeight: 'bold'}} className="social" href="https://arduvia.com">Arduvia</a></h3>
           May 2024 &mdash; Dec 2024
         </div>
