@@ -6,7 +6,7 @@ const poemsDirectory = path.join(process.cwd(), 'poems')
 
 export interface PoemsMetadata {
   title: string
-  author: string,
+  author?: string,
   date?: string
 }
 

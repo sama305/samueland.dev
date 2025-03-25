@@ -6,11 +6,14 @@ export default function Poetry() {
 
   return (
     <div>
-      <p>Below is an unorganized, ever-growing list of poems which I've enjoyed at some point in time. Some are dated, some are not, some were even written by <i>yours truly</i>, but each of them made enough of an impression on me to include them here. Enjoy.</p>
+      <p>Below is an unorganized, ever-growing list of poems which I either made or enjoyed at some point in time. Some are dated, others are not, and unless otherwise noted, they were all written by <i>yours truly</i>.</p>
       <ul>
         {posts.map(({ slug, metadata }) => (
           <li key={slug}>
-            <span><Link href={`/poem/${slug}`}>{metadata.title}</Link> by {metadata.author}</span>
+            <span><Link href={`/poem/${slug}`}>{metadata.title}</Link></span>
+            {metadata.author && (
+              <span> by {metadata.author}</span>
+            )}
             {metadata.date && (
               <span>{" "}({metadata.date})</span>
             )}
