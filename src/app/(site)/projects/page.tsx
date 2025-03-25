@@ -23,7 +23,7 @@ export default function Projects() {
       <div className="content" style={{ gap: '0' }}>
         <div style={{ width: '13rem' }}>
           <h3><a style={{ fontWeight: 'bold'}} className="social" href="https://arduvia.com">Arduvia</a></h3>
-          May 2024 &mdash; Dec 2024
+          May &mdash; Dec 2024
         </div>
         <div className="right">
           <p>
