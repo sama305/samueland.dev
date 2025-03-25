@@ -25,7 +25,7 @@ export default function About() {
           <a className="social">GitHub</a>
         </div>
       </div>
-      <div className="right">
+      <div>
         <img style={{ width: '20rem' }} src="me.png" />
       </div>
     </div>
