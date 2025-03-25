@@ -1,4 +1,5 @@
-import { getAllPosts, stringToDateString } from "@/lib"
+import { getAllPosts } from "@/lib/posts"
+import { stringToDateString } from "@/lib"
 import Link from "next/link"
 
 export default function BlogPage() {

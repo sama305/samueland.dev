@@ -12,7 +12,7 @@ html {
 .main {
   max-width: 50rem;
   margin: auto;
-  padding: 3rem;
+  padding: 3rem 1.5rem;
 }
 
 /* Content layout */
@@ -50,16 +50,23 @@ html {
 }
 
 /* Navbar */
-.navbar {
+.vnavbar {
+  display: flex;
+  flex-direction: column;
+}
+
+.hnavbar {
   display: flex;
   gap: 1rem;
 }
 
-.navbar a {
+.vnavbar a,
+.hnavbar a {
   text-decoration: none;
 }
 
-.navbar a:hover {
+.vnavbar a:hover,
+.hnavbar a:hover {
   text-decoration: underline;
 }
 

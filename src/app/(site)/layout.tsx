@@ -12,6 +12,28 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  const navBarLinks: Array<{
+    label: string,
+    to: string
+  }> = [
+    {
+      label: "About",
+      to: "/"
+    },
+    {
+      label: "Projects",
+      to: "/projects"
+    },
+    {
+      label: "Blog",
+      to: "/blog"
+    },
+    {
+      label: "Misc",
+      to: "/misc"
+    }
+  ]
+
   return (
     <html lang="en">
       <body>
@@ -20,7 +42,7 @@ export default function RootLayout({
             <h1 className="left" style={{ width: '20rem', lineHeight: '2rem'}}>
               Samuel Morgan Anderson
             </h1>
-            <Navbar className="right"/>
+            <Navbar className="right" links={navBarLinks}/>
           </div>
           {children}
         </div>

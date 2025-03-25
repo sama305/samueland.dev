@@ -1,4 +1,5 @@
-import { getAllPostSlugs, getPostBySlug, stringToDateString } from '@/lib'
+import { getAllPostSlugs, getPostBySlug } from '@/lib/posts'
+import { stringToDateString } from "@/lib"
 import { useMDXComponents } from '@/mdx-components'
 import { MDXRemote } from 'next-mdx-remote/rsc'
 import Link from 'next/link'

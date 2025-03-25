@@ -6,6 +6,8 @@ const nextConfig: NextConfig = {
   transpilePackages: process.env.NODE_ENV !== "production" ? ["next-mdx-remote"] : undefined
 };
 
-const withConfig = createMdx()
+const withConfig = createMdx({
+  extension: '/\.mdx?$/'
+})
 
 export default withConfig(nextConfig);
