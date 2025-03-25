@@ -28,12 +28,12 @@ export const miscLinks: Array<LinkListEntry> = [
     to: "/misc"
   },
   {
-    title: "Collected poetry",
-    to: "/misc/poetry"
+    title: "PICO-8 Games",
+    to: "/misc/games"
   },
   {
-    title: "PICO-8 games",
-    to: "/misc/games"
+    title: "Collected Poetry",
+    to: "/misc/poetry"
   },
 ]
 
