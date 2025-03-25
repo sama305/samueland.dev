@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import "../globals.css";
 import Navbar from "../../../components/Navbar";
+import { mainNavbarLinks } from "@/lib/navlists";
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -12,27 +13,6 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-  const navBarLinks: Array<{
-    label: string,
-    to: string
-  }> = [
-    {
-      label: "About",
-      to: "/"
-    },
-    {
-      label: "Projects",
-      to: "/projects"
-    },
-    {
-      label: "Blog",
-      to: "/blog"
-    },
-    {
-      label: "My Stuff",
-      to: "/misc"
-    }
-  ]
 
   return (
     <html lang="en">
@@ -42,7 +22,7 @@ export default function RootLayout({
             <h1 className="left" style={{ width: '20rem', lineHeight: '2rem'}}>
               Samuel Morgan Anderson
             </h1>
-            <Navbar className="right" links={navBarLinks}/>
+            <Navbar className="right" links={mainNavbarLinks}/>
           </div>
           {children}
         </div>

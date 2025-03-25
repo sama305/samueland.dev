@@ -1,15 +1,13 @@
 "use client";
 
+import { LinkListEntry } from "@/lib/types";
 import { usePathname } from "next/navigation";
 import { CSSProperties } from "react";
 
 interface NavbarProps {
   className?: string,
   style?: CSSProperties,
-  links: Array<{
-    label: string,
-    to: string
-  }>,
+  links: Array<LinkListEntry>,
   vertical?: boolean
 }
 
@@ -20,11 +18,11 @@ export default function Navbar({ className, links, vertical, style }: NavbarProp
     <div style={style} className={className + " navbar" + (vertical ? " vnavbar" : " hnavbar")}>
       {links.map(l => (
         <a
-          key={l.label}
+          key={l.title}
           href={l.to}
           style={{ textDecoration: l.to === currentPage ? 'underline' : ''}}
         >
-          {l.label}
+          {l.title}
         </a>
       ))}
     </div>

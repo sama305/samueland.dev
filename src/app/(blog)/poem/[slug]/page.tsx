@@ -24,8 +24,8 @@ export default async function PoemPage({ params }: PoemParams) {
     <div>
       <div>
         <div>
-          <h1>{poem.metadata.title}</h1>
-          <p>By {poem.metadata.author}</p>
+          <h1 style={{ width: '20rem', lineHeight: '2rem' }}>{poem.metadata.title}</h1>
+          {poem.metadata.author && <p>By {poem.metadata.author}</p>}
         </div>
         <div style={{ marginTop: '3rem'}}>
           <MDXRemote components={useMDXComponents({})} source={poem.content} />
