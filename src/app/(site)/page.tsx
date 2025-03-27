@@ -1,5 +1,3 @@
-import { DownloadIcon } from "lucide-react";
-
 export default function About() {
   return (
     <div className="content">
@@ -24,7 +22,7 @@ export default function About() {
             <a href="https://github.com/sama305" target="_blank">GitHub</a>
           </div>
           <div className="linkbox">
-            <span style={{display: 'flex', gap: '0.25rem'}}><a href="/resume.pdf" target="_blank">View my résumé</a></span>
+            <span style={{display: 'flex', gap: '0.25rem'}}><a href="/samuel_morgan_anderson_resume.pdf" target="_blank">View my résumé</a></span>
           </div>
         </div>
       </div>
