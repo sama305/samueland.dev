@@ -19,12 +19,12 @@ export default function About() {
         </p>
         <div style={{ display: 'flex', flexDirection: 'column', gap: '0.5rem'}}>
           <div className="linkbox">
-            <a href="mailto:andersonhenderson45@gmail.com">Email</a>
-            <a href="https://www.linkedin.com/in/samuel-anderson-611488176/">LinkedIn</a>
-            <a href="https://github.com/sama305">GitHub</a>
+            <a href="mailto:andersonhenderson45@gmail.com" target="_blank">Email</a>
+            <a href="https://www.linkedin.com/in/samuel-anderson-611488176/" target="_blank">LinkedIn</a>
+            <a href="https://github.com/sama305" target="_blank">GitHub</a>
           </div>
           <div className="linkbox">
-            <span style={{display: 'flex', gap: '0.25rem'}}><DownloadIcon /><a href="">Download my portfolio</a></span>
+            <span style={{display: 'flex', gap: '0.25rem'}}><a href="/resume.pdf" target="_blank">View my résumé</a></span>
           </div>
         </div>
       </div>
