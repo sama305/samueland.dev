@@ -1,5 +1,4 @@
 import { DownloadIcon } from "lucide-react";
-import { Icons } from "../../../components/shadcn/Icon";
 
 export default function About() {
   return (
@@ -20,12 +19,12 @@ export default function About() {
         </p>
         <div style={{ display: 'flex', flexDirection: 'column', gap: '0.5rem'}}>
           <div className="linkbox">
-              <a className="social">Email</a>
-              <a className="social">LinkedIn</a>
-              <a className="social">GitHub</a>
+            <a href="mailto:andersonhenderson45@gmail.com">Email</a>
+            <a href="https://www.linkedin.com/in/samuel-anderson-611488176/">LinkedIn</a>
+            <a href="https://github.com/sama305">GitHub</a>
           </div>
           <div className="linkbox">
-              <span style={{display: 'flex', gap: '0.25rem'}}><DownloadIcon /><a className="social">Download my portfolio</a></span>
+            <span style={{display: 'flex', gap: '0.25rem'}}><DownloadIcon /><a href="">Download my portfolio</a></span>
           </div>
         </div>
       </div>

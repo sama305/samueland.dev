@@ -6,8 +6,7 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-  return (
-    
+  return (    
     <div className="content">
       <Navbar style={{ width: '10rem' }} links={miscLinks} vertical={true}/>
       <div className="right">{children}</div>

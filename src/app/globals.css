@@ -1,6 +1,7 @@
 html {
   font-family: "Rubik", sans-serif;
   color: #444;
+  scrollbar-gutter: stable;
 }
 
 * {
@@ -44,12 +45,6 @@ html {
   gap: 1rem;
 }
 
-.linkbox div {
-  display: flex;
-  flex-direction: row;
-  gap: 1rem
-}
-
 .blogEntry {
   display: flex;
   flex-direction: column;
@@ -69,6 +64,7 @@ html {
 .vnavbar a,
 .hnavbar a {
   text-decoration: none;
+  color: #444;
 }
 
 .vnavbar a:hover,
@@ -78,10 +74,17 @@ html {
 
 /* Element overrides */
 a {
-  font-weight: 400;
   color: #444;
   text-decoration: underline;
   text-underline-offset: 4px;
+}
+
+a:hover {
+  color: #0E8FB7;
+}
+
+h3 a {
+  color: #444;
 }
 
 ul {
