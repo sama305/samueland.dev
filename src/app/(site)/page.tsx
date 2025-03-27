@@ -13,7 +13,7 @@ export default function About() {
           My experience with computer science goes all the way back to my childhood; since then, I've worked with on solo projects, small group projects, and even with teams at large companies. Yet no matter the situation, I always focus on the ultimate goal: delivering high quality, polished software.
         </p>
         <p>
-          Besides computer science, my interests include reading, writing, playing guitar and piano, listening to tons of music, and making small games.
+          Besides computer science, my interests include reading, writing, playing guitar and piano, studying Spanish, listening to lots of music, and making small games.
         </p>
         <div style={{ display: 'flex', flexDirection: 'column', gap: '0.5rem'}}>
           <div className="linkbox">

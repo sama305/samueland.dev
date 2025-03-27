@@ -11,7 +11,7 @@ export default function Projects() {
             <a className="social" href="https://librewrite.com" target="_blank">Librewrite.com</a> is a free webapp intended for practicing creative writing. It facilitates the exercise of <i>free writing</i>, which is, according to <a href="https://en.wikipedia.org/wiki/Free_writing">Wikipedia</a>, "a prewriting technique practiced in academic environments, in which a person writes continuously for a set period of time with limited concern for rhetoric, conventions, and mechanics, sometimes working from a specific prompt provided by a teacher."
           </p>
           <p>
-            Initially, I discovered free writing in my LIT2000 class, and immediately wanted to continue the practice at home. However, I noticed there was a lack of websites which could administer free writing sessions, and since I didn't want to ask a friend to stand shouting out prompts for me, I began work on my own tool: Librewrite.com.
+            I initially discovered free writing in my LIT2000 class, and immediately wanted to continue the practice at home. However, I noticed there was a lack of websites which could administer free writing sessions, and since I didn't want to ask a friend to stand shouting out prompts for me, I began work on my own tool: Librewrite.com.
           </p>
         </div>
       </div>
