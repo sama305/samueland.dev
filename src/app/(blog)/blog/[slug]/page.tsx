@@ -24,7 +24,7 @@ export default async function BlogPostPage({ params }: BlogPostParams) {
     <div>
       <div>
         <div>
-          <h1 className='blogTitle'>{post.metadata.title}</h1>
+          <h1 style={{ lineHeight: '2rem' }}>{post.metadata.title}</h1>
           <p>Posted on {stringToDateString(post.metadata.date)}{post.metadata.updateDate ? `, last updated ${stringToDateString(post.metadata.updateDate)}` : ''}</p>
         </div>
         <div style={{ marginTop: '3rem'}}>
