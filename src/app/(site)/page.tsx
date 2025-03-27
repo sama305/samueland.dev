@@ -27,7 +27,7 @@ export default function About() {
         </div>
       </div>
       <div>
-        <img style={{ width: '20rem' }} src="me.png" />
+        <img alt="Myself, framed bottom right, standing with my arms on my sides. In the distance the Hollywood sign can be seen." style={{ width: '20rem' }} src="/me.jpg" />
       </div>
     </div>
   );
