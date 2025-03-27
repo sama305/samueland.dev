@@ -1,3 +1,6 @@
+import { DownloadIcon } from "lucide-react";
+import { Icons } from "../../../components/shadcn/Icon";
+
 export default function About() {
   return (
     <div className="content">
@@ -10,19 +13,20 @@ export default function About() {
           Bachelor of Science in Computer Science from Florida State University in 2025.
         </p>
         <p>
-          My fondness for computer science comes from a lifelong hobby of learning new things. Many years ago, I
-          taught myself how to code, and though my interests have
-          changed over the years, I
-          have never
-          stopped coding and I don't think I ever will.
+          My experience with computer science goes all the way back to my childhood; since then, I've worked with on solo projects, small group projects, and even with teams at large companies. Yet no matter the situation, I always focus on the ultimate goal: delivering high quality, polished software.
         </p>
         <p>
-          Besides coding, some of my hobbies include reading and writing, playing guitar and piano, listening to tons of
-          music, and making games.
+          Besides computer science, my interests include reading, writing, playing guitar and piano, listening to tons of music, and making small games.
         </p>
-        <div className="linkbox">
-          <a className="social">LinkedIn</a>
-          <a className="social">GitHub</a>
+        <div style={{ display: 'flex', flexDirection: 'column', gap: '0.5rem'}}>
+          <div className="linkbox">
+              <a className="social">Email</a>
+              <a className="social">LinkedIn</a>
+              <a className="social">GitHub</a>
+          </div>
+          <div className="linkbox">
+              <span style={{display: 'flex', gap: '0.25rem'}}><DownloadIcon /><a className="social">Download my portfolio</a></span>
+          </div>
         </div>
       </div>
       <div>

@@ -44,6 +44,12 @@ html {
   gap: 1rem;
 }
 
+.linkbox div {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem
+}
+
 .blogEntry {
   display: flex;
   flex-direction: column;
