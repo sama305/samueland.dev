@@ -8,9 +8,13 @@ export default function BlogPage() {
   return (
     <div style={{ marginTop: '3rem' }}>
       {posts.map(({ slug, metadata }) => (
-        <div style={{marginBottom: '1.5rem'}} key={slug}>
-          <h3><Link style={{ fontWeight: 'bold'}} href={`/blog/${slug}`}>{metadata.title}</Link></h3>
-          {stringToDateString(metadata.date)}
+        <div style={{ marginBottom: '1rem', display: 'flex' }} key={slug}>
+          <div>
+            <Link style={{ fontWeight: 'bold'}} href={`/blog/${slug}`}>{metadata.title}</Link>
+            <div style={{ width: '10rem' }}>
+              {stringToDateString(metadata.date)}
+            </div>
+          </div>
         </div>
       ))}
     </div>

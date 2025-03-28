@@ -10,7 +10,7 @@ export default function LinkList({ links }: LinkListProps) {
     <ul>
       {links.map(({ title, subtitle, to }) => (
         <li key={to}>
-          <span><Link href={to}>{title}</Link>{subtitle && `, ${subtitle}`}</span>
+          <span><Link href={to}>{title}</Link>{subtitle ? subtitle : ''}</span>
         </li>
       ))}
     </ul>

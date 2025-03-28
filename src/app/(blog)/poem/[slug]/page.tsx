@@ -1,7 +1,7 @@
 import { MDXRemote } from 'next-mdx-remote/rsc'
-import Link from 'next/link'
 import { notFound } from 'next/navigation'
 import { getAllPoemSlugs, getPoemBySlug } from '@/lib/poems'
+import ComponentPageOutline from '../../../../../components/ComponentPageOutline'
 
 interface PoemParams {
   params: Promise<{
@@ -21,18 +21,13 @@ export default async function PoemPage({ params }: PoemParams) {
 
   return (
     <div>
-      <div>
-        <div>
-          <h1 style={{ width: '20rem', lineHeight: '2rem' }}>{poem.metadata.title}</h1>
-          {poem.metadata.author && <p>By {poem.metadata.author}</p>}
-        </div>
-        <div style={{ marginTop: '3rem'}}>
-          <MDXRemote source={poem.content} />
-        </div>
-        <div style={{ marginTop: '3rem'}}>
-          <Link className="right" href={"/misc/poetry"}>&larr; See other poems</Link>
-        </div>
-      </div>
+      <ComponentPageOutline
+        title={poem.metadata.title}
+        subtitle={poem.metadata.author ? `By ${poem.metadata.author}` : undefined}
+        returnLink={{ to: '/misc/poetry', label: 'See other poems'}}
+      >
+        <MDXRemote source={poem.content} />
+      </ComponentPageOutline>
     </div>
   )
 }

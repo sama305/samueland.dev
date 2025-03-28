@@ -6,7 +6,7 @@ export default function Poetry() {
   const posts: Array<LinkListEntry> = getAllPoems().map(({ metadata, slug }) => ({
     title: metadata.title,
     to: `/poem/${slug}`,
-    subtitle: (metadata.author || metadata.date) ? `by ${metadata.author} (${metadata.date})` : undefined
+    subtitle: (metadata.author) ? `, by ${metadata.author}` : '' + (metadata.date ? ` (${metadata.date})` : '')
   }))
 
   return (
