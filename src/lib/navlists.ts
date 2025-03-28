@@ -3,7 +3,7 @@ import { LinkListEntry } from "./types"
 /* Main navbar */
 export const mainNavbarLinks: Array<LinkListEntry> = [
   {
-    title: "About",
+    title: "Bio",
     to: "/"
   },
   {
