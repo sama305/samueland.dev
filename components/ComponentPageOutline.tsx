@@ -16,7 +16,9 @@ export default function ComponentPageOutline({ title, subtitle, children, return
       <div>
         <div>
           <h1 style={{ lineHeight: '2rem' }}>{title}</h1>
-          <p>{subtitle}</p>
+          {subtitle && (
+            <p>{subtitle}</p>
+          )}
         </div>
         <div style={{ marginTop: '3rem'}}>
           {children}
