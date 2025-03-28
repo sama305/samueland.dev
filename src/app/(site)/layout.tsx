@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import "../globals.css";
 import Navbar from "../../../components/Navbar";
 import { mainNavbarLinks } from "@/lib/navlists";
+import { Analytics } from "@vercel/analytics/next";
 
 export const metadata: Metadata = {
   title: "samueland.dev",
@@ -26,6 +27,7 @@ export default function RootLayout({
           </div>
           {children}
         </div>
+        <Analytics />
       </body>
     </html>
   );
