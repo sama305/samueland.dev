@@ -1,4 +1,10 @@
+import { Metadata } from "next";
 import "../globals.css";
+
+export const metadata: Metadata = {
+  title: "samueland.dev",
+  description: "Crafted with care",
+};
 
 export default function BlogLayout({
   children,
