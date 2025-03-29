@@ -1,6 +1,5 @@
 import { Metadata } from "next";
 import "../globals.css";
-import { Analytics } from "@vercel/analytics/next";
 
 export const metadata: Metadata = {
   title: "samueland.dev",
@@ -18,7 +17,7 @@ export default function BlogLayout({
         <div className="main">
           {children}
         </div>
-        <Analytics />
+        <script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "fe8275266cbb47ba94f4dbee1cf17645"}'></script>
       </body>
     </html>
   );

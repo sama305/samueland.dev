@@ -2,7 +2,6 @@ import type { Metadata } from "next";
 import "../globals.css";
 import Navbar from "../../../components/Navbar";
 import { mainNavbarLinks } from "@/lib/navlists";
-import { Analytics } from "@vercel/analytics/next";
 
 export const metadata: Metadata = {
   title: "samueland.dev",
@@ -26,7 +25,7 @@ export default function RootLayout({
             <Navbar className="right" links={mainNavbarLinks}/>
           </div>
           {children}
-          <Analytics />
+          <script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "fe8275266cbb47ba94f4dbee1cf17645"}'></script>
         </div>
       </body>
     </html>
