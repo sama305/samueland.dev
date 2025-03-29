@@ -1,5 +1,6 @@
 import { Metadata } from "next";
 import "../globals.css";
+import { Analytics } from "@vercel/analytics/next";
 
 export const metadata: Metadata = {
   title: "samueland.dev",
@@ -17,6 +18,7 @@ export default function BlogLayout({
         <div className="main">
           {children}
         </div>
+        <Analytics />
       </body>
     </html>
   );
