@@ -1,9 +1,9 @@
 export default function Projects() {
   return (
     <div>
-      <div className="content" style={{ gap: '0'}}>
-        <div style={{ width: '13rem', marginBottom: '1.5rem' }} >
-          <h3><a style={{ fontWeight: 'bold'}} className="social" href="https://librewrite.com" target="_blank">Librewrite.com</a></h3>
+      <div className="content projectEntry">
+        <div>
+          <h3><a className="social" href="https://librewrite.com" target="_blank">Librewrite.com</a></h3>
           Oct 2024 &mdash; Present
         </div>
         <div className="right">
@@ -15,9 +15,9 @@ export default function Projects() {
           </p>
         </div>
       </div>
-      <div className="content" style={{ gap: '0' }}>
-        <div style={{ width: '13rem', marginBottom: '1.5rem' }}>
-          <h3><a style={{ fontWeight: 'bold'}} className="social" href="https://arduvia.com" target="_blank">Arduvia</a></h3>
+      <div className="content projectEntry">
+        <div>
+          <h3><a className="social" href="https://arduvia.com" target="_blank">Arduvia</a></h3>
           May &mdash; Dec 2024
         </div>
         <div className="right">

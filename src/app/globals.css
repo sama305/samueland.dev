@@ -32,7 +32,25 @@ html {
 }
 
 /* Misc */
+.bioPic {
+  width: 20rem;
+}
+
+.header {
+  line-height: 2rem;
+}
+
+.header.name {
+  width: 20rem;
+}
+
 .linkbox {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem
+}
+
+.linkbox div {
   display: flex;
   flex-direction: row;
   gap: 1rem;
@@ -40,13 +58,44 @@ html {
 
 .blogEntry {
   display: flex;
-  flex-direction: column;
+  margin-bottom: 1rem;
 }
 
 .blogImg {
   width: 100%;
   height: auto;
   margin-bottom: 1.5rem;
+}
+
+.projectEntry>div:first-child {
+  width: 10rem;
+  margin-bottom: 1.5rem;
+}
+
+/* Page outline */
+.outlineBody,
+.outlineFooter {
+  margin-top: 3rem;
+}
+
+/* PICO-8 game page */
+.gameFooter {
+  margin-top: 1.5rem;
+}
+
+.gameScreen {
+  position: relative;
+  padding-top: 75%;
+  height: 0
+}
+
+.gameScreen>iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
 }
 
 /* Navbar */
@@ -68,6 +117,10 @@ html {
 
 .vnavbar a:hover,
 .hnavbar a:hover {
+  text-decoration: underline;
+}
+
+.navbar>.selected {
   text-decoration: underline;
 }
 

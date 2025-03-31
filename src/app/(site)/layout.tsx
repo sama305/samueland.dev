@@ -19,7 +19,7 @@ export default function RootLayout({
       <body>
         <div className="main">
           <div className="content">
-            <h1 className="left" style={{ width: '20rem', lineHeight: '2rem'}}>
+            <h1 className="left header name">
               Samuel Morgan Anderson
             </h1>
             <Navbar className="right" links={mainNavbarLinks}/>
