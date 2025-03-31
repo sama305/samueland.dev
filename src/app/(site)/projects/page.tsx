@@ -27,7 +27,7 @@ export default function Projects() {
             feeds and algorithms with a literal map of the world.
           </p>
           <p>
-            Users can create and comment on posts, which appear as colorful circles above the approxiamate location at
+            Users can create and comment on posts, which appear as colorful circles above the approximate location at
             the time the
             post was created. Posts can be liked, and a post's visual "circle of influence" is determined by how many
             likes they have in relation to other posts.
