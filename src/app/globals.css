@@ -1,7 +1,5 @@
 html {
   font-family: "Rubik", sans-serif;
-  color: #444;
-  background: #f9f5ea;
   scrollbar-gutter: stable;
 }
 
@@ -71,7 +69,6 @@ html {
 .vnavbar a,
 .hnavbar a {
   text-decoration: none;
-  color: #444;
 }
 
 .vnavbar a:hover,
@@ -86,18 +83,41 @@ a {
   text-underline-offset: 4px;
 }
 
-a:hover {
-  color: #508DB4;
-}
-
-h3 a {
-  color: #444;
-}
-
 ul {
   margin-left: 1rem;
 }
 
 p:not(:last-child) {
   margin-bottom: 1.5rem;
+}
+
+/* light/dark mode */
+@media (prefers-color-scheme: light) {
+  html {
+    color: #444;
+    background: #f9f5ea;
+  }
+
+  a {
+    color: #444;
+  }
+
+  a:hover {
+    color: #508DB4;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  html {
+    background: #141006;
+    color: #f9f5ea;
+  }
+
+  a {
+    color: #f9f5ea;
+  }
+
+  a:hover {
+    color: #45a5e0;
+  }
 }
