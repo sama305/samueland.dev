@@ -31,12 +31,6 @@ html {
   flex: 1 1 0;
 }
 
-@media (max-width: 50rem) {
-  .content {
-    flex-direction: column;
-  }
-}
-
 /* Misc */
 .linkbox {
   display: flex;
@@ -64,6 +58,7 @@ html {
 .hnavbar {
   display: flex;
   gap: 1rem;
+  justify-content: end;
 }
 
 .vnavbar a,
@@ -119,5 +114,15 @@ p:not(:last-child) {
 
   a:hover {
     color: #45a5e0;
+  }
+}
+
+@media (max-width: 50rem) {
+  .content {
+    flex-direction: column;
+  }
+
+  .hnavbar {
+    justify-content: start;
   }
 }
