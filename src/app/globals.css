@@ -1,7 +1,5 @@
 html {
   font-family: "Rubik", sans-serif;
-  color: #444;
-  background: #f9f5ea;
   scrollbar-gutter: stable;
 }
 
@@ -33,14 +31,26 @@ html {
   flex: 1 1 0;
 }
 
-@media (max-width: 50rem) {
-  .content {
-    flex-direction: column;
-  }
+/* Misc */
+.bioPic {
+  width: 20rem;
 }
 
-/* Misc */
+.header {
+  line-height: 2rem;
+}
+
+.header.name {
+  width: 20rem;
+}
+
 .linkbox {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem
+}
+
+.linkbox div {
   display: flex;
   flex-direction: row;
   gap: 1rem;
@@ -48,13 +58,44 @@ html {
 
 .blogEntry {
   display: flex;
-  flex-direction: column;
+  margin-bottom: 1rem;
 }
 
 .blogImg {
   width: 100%;
   height: auto;
   margin-bottom: 1.5rem;
+}
+
+.projectEntry>div:first-child {
+  width: 10rem;
+  margin-bottom: 1.5rem;
+}
+
+/* Page outline */
+.outlineBody,
+.outlineFooter {
+  margin-top: 3rem;
+}
+
+/* PICO-8 game page */
+.gameFooter {
+  margin-top: 1.5rem;
+}
+
+.gameScreen {
+  position: relative;
+  padding-top: 75%;
+  height: 0
+}
+
+.gameScreen>iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
 }
 
 /* Navbar */
@@ -66,16 +107,20 @@ html {
 .hnavbar {
   display: flex;
   gap: 1rem;
+  justify-content: end;
 }
 
 .vnavbar a,
 .hnavbar a {
   text-decoration: none;
-  color: #444;
 }
 
 .vnavbar a:hover,
 .hnavbar a:hover {
+  text-decoration: underline;
+}
+
+.navbar>.selected {
   text-decoration: underline;
 }
 
@@ -86,18 +131,51 @@ a {
   text-underline-offset: 4px;
 }
 
-a:hover {
-  color: #508DB4;
-}
-
-h3 a {
-  color: #444;
-}
-
 ul {
   margin-left: 1rem;
 }
 
 p:not(:last-child) {
   margin-bottom: 1.5rem;
+}
+
+/* light/dark mode */
+@media (prefers-color-scheme: light) {
+  html {
+    color: #444;
+    background: #f9f5ea;
+  }
+
+  a {
+    color: #444;
+  }
+
+  a:hover {
+    color: #508DB4;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  html {
+    background: #141006;
+    color: #f9f5ea;
+  }
+
+  a {
+    color: #f9f5ea;
+  }
+
+  a:hover {
+    color: #45a5e0;
+  }
+}
+
+@media (max-width: 50rem) {
+  .content {
+    flex-direction: column;
+  }
+
+  .hnavbar {
+    justify-content: start;
+  }
 }

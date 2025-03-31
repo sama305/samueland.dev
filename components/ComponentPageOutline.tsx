@@ -15,15 +15,15 @@ export default function ComponentPageOutline({ title, subtitle, children, return
     <div>
       <div>
         <div>
-          <h1 style={{ lineHeight: '2rem' }}>{title}</h1>
+          <h1 className="header">{title}</h1>
           {subtitle && (
             <p>{subtitle}</p>
           )}
         </div>
-        <div style={{ marginTop: '3rem'}}>
+        <div className="outlineBody">
           {children}
         </div>
-        <div style={{ marginTop: '3rem'}}>
+        <div className="outlineFooter">
           <Link className="right" href={returnLink.to}>&larr;{returnLink ? ` ${returnLink.label}` : ''}</Link>
         </div>
       </div>

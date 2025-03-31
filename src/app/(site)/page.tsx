@@ -15,19 +15,19 @@ export default function About() {
         <p>
           Besides computer science, my interests include reading, writing, playing guitar and piano, studying Spanish, listening to lots of music, and making small games.
         </p>
-        <div style={{ display: 'flex', flexDirection: 'column', gap: '0.5rem'}}>
-          <div className="linkbox">
+        <div className="linkbox">
+          <div>
             <a href="mailto:andersonhenderson45@gmail.com" target="_blank">Email</a>
             <a href="https://www.linkedin.com/in/samuel-anderson-611488176/" target="_blank">LinkedIn</a>
             <a href="https://github.com/sama305" target="_blank">GitHub</a>
           </div>
-          <div className="linkbox">
-            <span style={{display: 'flex', gap: '0.25rem'}}><a href="/samuel_morgan_anderson_resume.pdf" target="_blank">View my résumé</a></span>
+          <div>
+            <span><a href="/samuel_morgan_anderson_resume.pdf" target="_blank">View my résumé</a></span>
           </div>
         </div>
       </div>
       <div>
-        <img alt="Myself, framed bottom right, standing with my arms on my sides. In the distance the Hollywood sign can be seen." style={{ width: '20rem' }} src="/me.jpg" />
+        <img alt="Myself, framed bottom right, standing with my arms on my sides. In the distance the Hollywood sign can be seen." className="bioPic" src="/me.jpg" />
       </div>
     </div>
   );
