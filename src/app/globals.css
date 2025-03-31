@@ -22,6 +22,10 @@ html {
   flex-direction: row;
 }
 
+.projectEntry {
+  gap: 0;
+}
+
 .content:not(:last-child) {
   margin-bottom: 3rem;
 }
@@ -67,8 +71,9 @@ html {
   margin-bottom: 1.5rem;
 }
 
+
 .projectEntry>div:first-child {
-  width: 10rem;
+  width: 13rem;
   margin-bottom: 1.5rem;
 }
 
