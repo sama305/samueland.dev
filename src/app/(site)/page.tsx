@@ -8,7 +8,7 @@ export default function About() {
           Bachelor of Science in Computer Science from Florida State University in May of 2025.
         </p>
         <p>
-          My experience with computer science goes all the way back to my childhood; since then, I've worked with on solo projects, group projects, and even with teams at large companies. Ultimately, my goal in every project I undertake is to deliver the <i>highest quality software possible</i>.
+          My experience with programming goes all the way back to my childhood; since then, I've worked with on solo projects, group projects, and even with teams at large companies. Without compromise, I always try to deliver software which is <i>sustainable</i>, <i>reliable</i> and of the <i>highest possible quality</i>.
         </p>
         <p>
           Besides computer science, my interests include reading, writing, playing guitar and piano, studying Spanish, listening to lots of old music, and making small games.
