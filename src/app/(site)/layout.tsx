@@ -18,7 +18,7 @@ export default function RootLayout({
     <html lang="en">
       <body>
         <div className="main">
-          <div className="content">
+          <div className="content banner">
             <h1 className="left header name">
               Samuel Morgan Anderson
             </h1>
