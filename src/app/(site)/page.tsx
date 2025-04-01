@@ -3,15 +3,15 @@ export default function About() {
     <div className="content">
       <div className="left">
         <p>
-          Hello. My name is Samuel Morgan Anderson, and I'm a computer science professional living in Miami, Florida,
-          where I currently intern at <a href="https://www.watscoventures.com/">Watsco Ventures LLC</a>. Currently, I am also enrolled at Florida State University where I am set to recieve a
+          Hi, I'm Sam. I'm a 22 year-old computer science professional living in Miami, Florida,
+          where I currently intern at <a href="https://www.watscoventures.com/">Watsco Ventures LLC</a>. I'm also enrolled at Florida State University, where I'm set to recieve a
           Bachelor of Science in Computer Science from Florida State University in May of 2025.
         </p>
         <p>
-          My experience with computer science goes all the way back to my childhood; since then, I've worked with on solo projects, small group projects, and even with teams at large companies. Ultimately, my goal with all of these projects is always to deliver the highest quality software possible.
+          My experience with computer science goes all the way back to my childhood; since then, I've worked with on solo projects, group projects, and even with teams at large companies. Ultimately, my goal in every project I undertake is to deliver the <i>highest quality software possible</i>.
         </p>
         <p>
-          Besides computer science, my interests include reading, writing, playing guitar and piano, studying Spanish, listening to lots of music, and making small games.
+          Besides computer science, my interests include reading, writing, playing guitar and piano, studying Spanish, listening to lots of old music, and making small games.
         </p>
         <div className="linkbox">
           <div>
