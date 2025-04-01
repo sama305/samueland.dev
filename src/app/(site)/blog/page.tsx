@@ -6,14 +6,12 @@ export default function BlogPage() {
   const posts = getAllPosts()
 
   return (
-    <div style={{ marginTop: '3rem' }}>
+    <div>
       {posts.map(({ slug, metadata }) => (
-        <div style={{ marginBottom: '1rem', display: 'flex' }} key={slug}>
+        <div className="blogEntry" key={slug}>
           <div>
-            <Link style={{ fontWeight: 'bold'}} href={`/blog/${slug}`}>{metadata.title}</Link>
-            <div style={{ width: '10rem' }}>
-              {stringToDateString(metadata.date)}
-            </div>
+            <Link href={`/blog/${slug}`}>{metadata.title}</Link>
+            <div>{stringToDateString(metadata.date)}</div>
           </div>
         </div>
       ))}
