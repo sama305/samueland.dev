@@ -3,7 +3,7 @@
 My home page.
 
 ## Changelog
-`releaes/v0.3`
+`release/v0.3`
 * 'My Stuff' is now garden
   * wording has been changed in preamble
 * games, poetry content comes before writeup
