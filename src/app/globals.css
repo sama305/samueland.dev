@@ -200,4 +200,8 @@ p:not(:last-child) {
   .bioRight {
     flex-direction: column-reverse;
   }
+
+  .projectEntry {
+    gap: 0;
+  }
 }
