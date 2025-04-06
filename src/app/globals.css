@@ -44,6 +44,12 @@ div:not(:last-child) {
   width: 15rem;
 }
 
+.bioRight {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
 .header {
   line-height: 2rem;
 }
@@ -193,5 +199,9 @@ p:not(:last-child) {
 
   .hnavbar {
     justify-content: start;
+  }
+
+  .bioRight {
+    flex-direction: column-reverse;
   }
 }

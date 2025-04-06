@@ -13,6 +13,9 @@ export default function About() {
         <p>
           Besides computer science, my interests include reading, writing, playing guitar and piano, studying Spanish, listening to lots of old music, and making small games.
         </p>
+      </div>
+      <div className="bioRight">
+        <img alt="Myself, framed bottom right, standing with my arms on my sides. In the distance the Hollywood sign can be seen." className="bioPic" src="/me.jpg" />
         <div className="linkbox">
           <div>
             <a href="mailto:andersonhenderson45@gmail.com" target="_blank">Email</a>
@@ -23,9 +26,6 @@ export default function About() {
             <span><a href="/samuel_morgan_anderson_resume.pdf" target="_blank">View my résumé</a></span>
           </div>
         </div>
-      </div>
-      <div>
-        <img alt="Myself, framed bottom right, standing with my arms on my sides. In the distance the Hollywood sign can be seen." className="bioPic" src="/me.jpg" />
       </div>
     </div>
   );
