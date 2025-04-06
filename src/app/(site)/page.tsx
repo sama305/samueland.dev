@@ -18,7 +18,7 @@ export default function About() {
         <img alt="Myself, framed bottom right, standing with my arms on my sides. In the distance the Hollywood sign can be seen." className="bioPic" src="/me.jpg" />
         <div className="linkbox">
           <div>
-            <a href="mailto:andersonhenderson45@gmail.com" target="_blank">Email</a>
+            <a href="mailto:andersonhenderson45@gmail.com" target="_blank">Email me</a>
             <a href="https://www.linkedin.com/in/samuel-anderson-611488176/" target="_blank">LinkedIn</a>
             <a href="https://github.com/sama305" target="_blank">GitHub</a>
           </div>

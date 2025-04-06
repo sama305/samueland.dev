@@ -3,8 +3,18 @@ export default function Projects() {
     <div>
       <div className="content projectEntry">
         <div>
-          <h3><a className="social" href="https://librewrite.com" target="_blank">Librewrite.com</a></h3>
-          Oct 2024 &mdash; Present
+          <div>
+            <h3><a className="social" href="https://librewrite.com" target="_blank">Librewrite.com</a></h3>
+            Oct 2024 &mdash; Present
+          </div>
+          <div>
+            <span>Made using...</span>
+            <ul>
+              <li><a href="https://nextjs.org" target="_blank">Next.js</a></li>
+              <li><a href="https://ui.shadcn.com" target="_blank">shadcn/ui</a></li>
+              <li><a href="https://dexie.org" target="_blank">Dexie.js</a></li>
+            </ul>
+          </div>
         </div>
         <div className="right">
           <p>
@@ -17,12 +27,23 @@ export default function Projects() {
       </div>
       <div className="content projectEntry">
         <div>
-          <h3><a className="social" href="https://arduvia.com" target="_blank">Arduvia</a></h3>
-          May &mdash; Dec 2024
+          <div>
+            <h3><a className="social" href="https://arduvia.com" target="_blank">Arduvia</a></h3>
+            May &mdash; Dec 2024
+          </div>
+          <div>
+            <span>Made using...</span>
+            <ul>
+              <li><a target="_blank" href="https://inertiajs.com">Inertia.js</a></li>
+              <li><a target="_blank" href="https://laravel.com">Laravel</a></li>
+              <li><a target="_blank" href="https://www.postgresql.com">PostgreSQL</a></li>
+              <li><a target="_blank" href="https://leafletjs.com">Leaflet</a> and <a target="_blank" href="https://www.openstreetmap.com">OpenStreetMap</a></li>
+            </ul>
+          </div>
         </div>
         <div className="right">
           <p>
-            Originally created as a senior class project, <a className="social" href="https://arduvia.com" target="_blank">Arduvia</a> is a
+            Originally created as a senior class project, <a href="https://arduvia.com" target="_blank">Arduvia</a> is a
             novel social-media "platform" which replaces
             feeds and algorithms with a literal map of the world.
           </p>

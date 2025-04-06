@@ -24,10 +24,6 @@ html {
   flex-direction: row;
 }
 
-.projectEntry {
-  gap: 0;
-}
-
 .left,
 .right {
   flex: 1 1 0;
@@ -92,6 +88,7 @@ div:not(:last-child) {
 
 .projectEntry {
   margin-bottom: 3rem !important;
+  gap: 0;
 }
 
 /* Page outline */
