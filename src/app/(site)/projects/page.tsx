@@ -34,10 +34,9 @@ export default function Projects() {
           <div>
             <span>Made using...</span>
             <ul>
-              <li><a target="_blank" href="https://inertiajs.com">Inertia.js</a></li>
-              <li><a target="_blank" href="https://laravel.com">Laravel</a></li>
+              <li><a target="_blank" href="https://inertiajs.com">Inertia.js</a> + <a target="_blank" href="https://laravel.com">Laravel</a></li>
               <li><a target="_blank" href="https://www.postgresql.com">PostgreSQL</a></li>
-              <li><a target="_blank" href="https://leafletjs.com">Leaflet</a> and <a target="_blank" href="https://www.openstreetmap.com">OpenStreetMap</a></li>
+              <li><a target="_blank" href="https://leafletjs.com">Leaflet</a> + <a target="_blank" href="https://www.openstreetmap.com">OpenStreetMap</a></li>
             </ul>
           </div>
         </div>
@@ -48,10 +47,38 @@ export default function Projects() {
             feeds and algorithms with a literal map of the world.
           </p>
           <p>
-            Users can create and comment on posts, which appear as colorful circles above the approximate location at
-            the time the
-            post was created. Posts can be liked, and a post's visual "circle of influence" is determined by how many
-            likes they have in relation to other posts.
+            Users can create posts, which appear as colorful circles above the approximate location at the time the post was created. Posts can also be liked and commented on, and a post's visual "circle of influence" is determined by how many likes they have in relation to other posts.
+          </p>
+          <p>
+            By replacing conventional algorithms with a more visual, far less linear way of finding trending posts, Arduvia connects users beyond the content of each post. This in turn creates a highly global, diverse community of engaged users.
+          </p>
+        </div>
+      </div>
+      <div className="content projectEntry">
+        <div>
+          <div>
+            <h3><a className="social" href="https://github.com/danieltdang/Order-Tracker" target="_blank">Order-Tracker</a></h3>
+            Feb &mdash; Apr 2024
+          </div>
+          <div>
+            <span>Made using...</span>
+            <ul>
+              <li><a target="_blank" href="https://angular.dev">Angular</a></li>
+              <li><a target="_blank" href="https://primeng.com">PrimeNG</a></li>
+              <li><a target="_blank" href="https://flask.palletsprojects.com">Flask</a></li>
+              <li><a target="_blank" href="https://www.postgresql.com">PostgreSQL</a></li>
+            </ul>
+          </div>
+        </div>
+        <div className="right">
+          <p>
+            The aptly titled Order-Tracker is a webapp intended for compiling orders placed through a variety of online shops (e.g. Shopify, Amazon) into a single, centralized location. It was created with three others as the COP4521 final project. 
+          </p>
+          <p>
+            Related emails are scraped for suitable order data, or the user can manually enter the order number. Each order can be in one of many states, such as shipped, delivered, or even cancelled. A main dashboard intuitively presents general data about current and past orders.
+          </p>
+          <p>
+            Finally, users can "pay" (as this was a school project, it was only implemented as a proof of concept) for a premium subscription which grants access to more useful metrics/order data and the ability to interact with some orders.
           </p>
         </div>
       </div>

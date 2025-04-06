@@ -88,7 +88,6 @@ div:not(:last-child) {
 
 .projectEntry {
   margin-bottom: 3rem !important;
-  gap: 0;
 }
 
 /* Page outline */
