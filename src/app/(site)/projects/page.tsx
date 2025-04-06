@@ -21,7 +21,7 @@ export default function Projects() {
             <a className="social" href="https://librewrite.com" target="_blank">Librewrite.com</a> is a free webapp for practicing creative writing. It facilitates the exercise of <i>free writing</i>, a method of practicing writing where you write nonstop for a set amount of time, sometimes working from a prompt.
           </p>
           <p>
-            I initially discovered free writing in my LIT2000 class, and immediately wanted to continue the practice at home. However, I noticed there was a lack of websites which could administer free writing sessions, and since I didn't want to ask a friend to stand shouting out prompts for me, I began work on my own tool: Librewrite.com.
+            I initially discovered free writing in my LIT2000 class and immediately wanted to continue the practice at home, but noticed a distinct lack of websites which could facilitate the practice. Naturally, I began work on my own tool: Librewrite.com.
           </p>
           <p>
             Pieces are written within timed rounds, with optional prompts for a greater challenge. Additionally, you can easily create/share custom rounds, which are rounds where the settings/prompts are chosen beforehand and can't be changed by anyone who plays it. This feature was specifically designed with teachers in mind, and makes sharing tailored configurations as easy as sending a link.
