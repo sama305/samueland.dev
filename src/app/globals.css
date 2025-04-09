@@ -90,12 +90,6 @@ div:not(:last-child) {
   margin-bottom: 3rem !important;
 }
 
-/* Page outline */
-.outlineBody,
-.outlineFooter {
-  margin-top: 3rem;
-}
-
 /* PICO-8 game page */
 .gameFooter {
   margin-top: 1.5rem;

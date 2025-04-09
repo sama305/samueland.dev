@@ -23,7 +23,7 @@ export default async function BlogPostPage({ params }: BlogPostParams) {
   return (
     <ComponentPageOutline
       title={post.metadata.title}
-      subtitle={`Posted on ${stringToDateString(post.metadata.date)}${post.metadata.updateDate ? `, last updated ${stringToDateString(post.metadata.updateDate)}` : ''}`}
+      subtitle={`${stringToDateString(post.metadata.date)}${post.metadata.updateDate ? `, last updated ${stringToDateString(post.metadata.updateDate)}` : ''}`}
       returnLink={{ to: '/blog', label: 'See other posts'}}
     >
       <MDXRemote source={post.content} />
