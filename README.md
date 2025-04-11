@@ -5,6 +5,8 @@ My home page.
 ## Changelog
 `release/v0.5`
 * 'Garden' is now 'Other works'
+* updated subtitles
+* added 2 poems, removed 1
 
 `release/v0.4`
 * overall text size has been increased
