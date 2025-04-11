@@ -6,8 +6,7 @@ const poemsDirectory = path.join(process.cwd(), 'poems')
 
 export interface PoemsMetadata {
   title: string
-  author?: string,
-  date?: string
+  date: string
 }
 
 export interface Poem {
@@ -39,4 +38,5 @@ export function getAllPoems(): Poem[] {
   const slugs = getAllPoemSlugs()
   return slugs
     .map(slug => getPoemBySlug(slug))
+    .sort((a, b) => new Date(b.metadata.date).getTime() - new Date(a.metadata.date).getTime())
 }
