@@ -37,9 +37,11 @@ export default function Projects() {
           <div>
             <span>Made using...</span>
             <ul>
-              <li><a target="_blank" href="https://inertiajs.com">Inertia.js</a> + <a target="_blank" href="https://laravel.com">Laravel</a></li>
+              <li><a target="_blank" href="https://inertiajs.com">Inertia.js</a></li>
+              <li><a target="_blank" href="https://laravel.com">Laravel</a></li>
               <li><a target="_blank" href="https://www.postgresql.com">PostgreSQL</a></li>
-              <li><a target="_blank" href="https://leafletjs.com">Leaflet</a> + <a target="_blank" href="https://www.openstreetmap.com">OpenStreetMap</a></li>
+              <li><a target="_blank" href="https://leafletjs.com">Leaflet</a></li>
+              <li><a target="_blank" href="https://www.openstreetmap.com">OpenStreetMap</a></li>
             </ul>
           </div>
         </div>
