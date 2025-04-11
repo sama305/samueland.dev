@@ -83,17 +83,11 @@ div:not(:last-child) {
 }
 
 .projectEntry>div:first-child {
-  width: 13rem;
+  width: 10rem;
 }
 
 .projectEntry {
   margin-bottom: 3rem !important;
-}
-
-/* Page outline */
-.outlineBody,
-.outlineFooter {
-  margin-top: 3rem;
 }
 
 /* PICO-8 game page */

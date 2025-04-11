@@ -3,6 +3,13 @@
 My home page.
 
 ## Changelog
+`release/v0.5`
+* 'Garden' is now 'Other works'
+* updated subtitles
+* added 2 poems, removed 1
+* updated preamble text
+* updated bio text
+
 `release/v0.4`
 * overall text size has been increased
 * main content is narrower

@@ -16,14 +16,16 @@ export default function ComponentPageOutline({ title, subtitle, children, return
       <div>
         <div>
           <h1 className="header">{title}</h1>
+        </div>
+        <div>
           {subtitle && (
             <p>{subtitle}</p>
           )}
         </div>
-        <div className="outlineBody">
+        <div>
           {children}
         </div>
-        <div className="outlineFooter">
+        <div>
           <Link className="right" href={returnLink.to}>&larr;{returnLink ? ` ${returnLink.label}` : ''}</Link>
         </div>
       </div>
