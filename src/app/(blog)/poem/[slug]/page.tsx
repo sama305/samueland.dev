@@ -23,7 +23,7 @@ export default async function PoemPage({ params }: PoemParams) {
     <div>
       <ComponentPageOutline
         title={poem.metadata.title}
-        subtitle={poem.metadata.author ? `By ${poem.metadata.author}` : undefined}
+        subtitle={poem.metadata.date ? `${poem.metadata.date}` : undefined}
         returnLink={{ to: '/otherworks/poetry', label: 'See other poems'}}
       >
         <MDXRemote source={poem.content} />

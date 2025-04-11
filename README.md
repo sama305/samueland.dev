@@ -8,6 +8,7 @@ My home page.
 * updated subtitles
 * added 2 poems, removed 1
 * updated preamble text
+* updated bio text
 
 `release/v0.4`
 * overall text size has been increased
