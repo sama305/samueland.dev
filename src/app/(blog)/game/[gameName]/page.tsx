@@ -14,7 +14,7 @@ export default async function GamePage({ params }: GameParams) {
     <div>
       <PicoGame gameName={gameName} />
       <div className='gameFooter'>
-        <Link href={"/garden/games"}>&larr; See other games</Link>
+        <Link href={"/otherworks/games"}>&larr; See other games</Link>
       </div>
     </div>
   )

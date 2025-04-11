@@ -3,6 +3,9 @@
 My home page.
 
 ## Changelog
+`release/v0.5`
+* 'Garden' is now 'Other works'
+
 `release/v0.4`
 * overall text size has been increased
 * main content is narrower

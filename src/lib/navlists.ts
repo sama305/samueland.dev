@@ -15,8 +15,8 @@ export const mainNavbarLinks: Array<LinkListEntry> = [
     to: "/blog"
   },
   {
-    title: "Garden",
-    to: "/garden"
+    title: "Other works",
+    to: "/otherworks"
   }
 ]
 
@@ -25,15 +25,15 @@ export const mainNavbarLinks: Array<LinkListEntry> = [
 export const miscLinks: Array<LinkListEntry> = [
   {
     title: "Preamble",
-    to: "/garden"
+    to: "/otherworks"
   },
   {
-    title: "PICO-8 Games",
-    to: "/garden/games"
+    title: "PICO-8",
+    to: "/otherworks/games"
   },
   {
-    title: "Collected Poetry",
-    to: "/garden/poetry"
+    title: "Poetry",
+    to: "/otherworks/poetry"
   },
 ]
 
