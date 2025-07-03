@@ -50,8 +50,12 @@ div:not(:last-child) {
   line-height: 2rem;
 }
 
+.subheader {
+  margin: 2rem 0;
+}
+
 .banner {
-  margin-bottom: 3rem !important;
+  margin-bottom: 2rem !important;
 }
 
 .header.name {
@@ -83,11 +87,12 @@ div:not(:last-child) {
 }
 
 .projectEntry>div:first-child {
-  width: 10rem;
+  width: 12rem;
 }
 
 .projectEntry {
   margin-bottom: 3rem !important;
+  gap: 2rem;
 }
 
 /* PICO-8 game page */

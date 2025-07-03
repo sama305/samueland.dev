@@ -7,8 +7,8 @@ export const mainNavbarLinks: Array<LinkListEntry> = [
     to: "/"
   },
   {
-    title: "Projects",
-    to: "/projects"
+    title: "Portfolio",
+    to: "/portfolio"
   },
   {
     title: "Blog",

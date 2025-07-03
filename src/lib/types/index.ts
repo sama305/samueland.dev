@@ -3,3 +3,10 @@ export interface LinkListEntry {
   subtitle?: string,
   to: string
 }
+
+export interface DatedLinkListEntry {
+  title: string,
+  subtitle?: string,
+  date: string,
+  to: string
+}

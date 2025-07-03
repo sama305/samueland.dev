@@ -1,18 +1,19 @@
 import { getAllPoems } from "@/lib/poems"
-import LinkList from "../../../../../components/LinkList"
-import { LinkListEntry } from "@/lib/types"
+import { DatedLinkListEntry } from "@/lib/types"
+import DatedLinkList from "../../../../../components/DatedLinkList"
 
 export default function Poetry() {
-  const posts: Array<LinkListEntry> = getAllPoems().map(({ metadata, slug }) => ({
+  const poems: Array<DatedLinkListEntry> = getAllPoems().map(({ metadata, slug }) => ({
     title: metadata.title,
     to: `/poem/${slug}`,
-    subtitle: (metadata.date ? `, ${metadata.date}` : '')
+    subtitle: (metadata.date ? `, ${new Date(metadata.date).toLocaleString('default', { month: 'long' })}` : ''),
+    date: metadata.date
   }))
 
   return (
     <div>
       <div>
-        <LinkList links={posts}/>
+        <DatedLinkList links={poems}/>
       </div>
     </div>
   )
