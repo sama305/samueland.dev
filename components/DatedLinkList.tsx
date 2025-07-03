@@ -25,7 +25,7 @@ export default function LinkList({ links }: LinkListProps) {
           <div key={k}>
             <h2>{k}</h2>
             <ul>
-            {datedLinks[parseInt(k)].map(({title, subtitle, to, date}) => {
+            {datedLinks[parseInt(k)].map(({title, subtitle, to}) => {
               return (
                 <li key={to}>
                   <span><Link href={to}>{title}</Link>{subtitle ? subtitle : ''}</span>
