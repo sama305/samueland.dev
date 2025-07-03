@@ -8,7 +8,7 @@ My home page.
 
 ### Added
 
-* added 2 poems
+* added a ton of poems
 
 ### Changed
 
