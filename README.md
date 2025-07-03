@@ -9,9 +9,11 @@ My home page.
 ### Added
 
 * added a ton of poems
+* added work history to 'Portfolio'
 
 ### Changed
 
+* poems are sectioned by the year they were written
 * 'Garden' is now 'Other works'
 * 'Projects' is now 'Portfolio'
 * updated subtitles
