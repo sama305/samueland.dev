@@ -8,11 +8,11 @@ export default function Games() {
     <div>
       <div>
         <div>
-          <h3>Games</h3>
+          <h2>Games</h2>
           <LinkList links={gameList}/>
         </div>
         <div>
-          <h3>Experiments</h3>
+          <h2>Experiments</h2>
           <LinkList links={experimentsList}/>
         </div>
       </div>
