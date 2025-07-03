@@ -2,15 +2,28 @@
 
 My home page.
 
-## Changelog
-`release/v0.5`
+# Changelog
+
+## [Unreleased]
+
+### Added
+
+* added 2 poems
+
+### Changed
+
 * 'Garden' is now 'Other works'
 * updated subtitles
-* added 2 poems, removed 1
 * updated preamble text
 * updated bio text
+* changelog now follows style of [keepachangelog](https://keepachangelog.com/en/1.1.0/)
 
-`release/v0.4`
+### Removed
+
+* removed a poem
+
+## [0.0.4]
+
 * overall text size has been increased
 * main content is narrower
 * updated bio page
@@ -21,13 +34,15 @@ My home page.
   * rewrote most project writeups
   * added 'Made using...' to show experience
 
-`release/v0.3`
+## [0.0.3]
+
 * 'My Stuff' is now garden
   * wording has been changed in preamble
 * games, poetry content comes before writeup
 * minor wording changes
 
-`release/v0.2`
+## [0.0.2]
+
 * navbar is now aligned to the right
 * dark mode added
 * removed all inline styling
