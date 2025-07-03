@@ -13,6 +13,7 @@ My home page.
 ### Changed
 
 * 'Garden' is now 'Other works'
+* 'Projects' is now 'Portfolio'
 * updated subtitles
 * updated preamble text
 * updated bio text
