@@ -15,7 +15,9 @@ export default function BlogLayout({
     <html lang="en">
       <body>
         <div className="main">
-          {children}
+          <article>
+            {children}
+          </article>
         </div>
         <script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "fe8275266cbb47ba94f4dbee1cf17645"}'></script>
       </body>

@@ -13,7 +13,7 @@ export default function Navbar({ className, links, vertical }: NavbarProps) {
   const currentPage = usePathname()
 
   return (
-    <nav className={className + " navbar" + (vertical ? " vnavbar" : " hnavbar")}>
+    <nav className={(className ? className : "") + " navbar" + (vertical ? " vnavbar" : " hnavbar")}>
       {links.map(l => (
         <a
           key={l.title}

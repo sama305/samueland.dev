@@ -7,9 +7,9 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (    
-    <div className="content">
+    <div className="content-cols">
       <Navbar links={miscLinks} vertical={true}/>
-      <div className="right">{children}</div>
+      <div>{children}</div>
     </div>
   );
 }

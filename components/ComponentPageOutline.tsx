@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Footer from "./Footer";
 
 interface ComponentPageOutline {
   title: string,
@@ -14,20 +15,19 @@ export default function ComponentPageOutline({ title, subtitle, children, return
   return (
     <div>
       <div>
-        <div>
-          <h1 className="header">{title}</h1>
-        </div>
-        <div>
-          {subtitle && (
-            <p>{subtitle}</p>
-          )}
+        <div style={{ borderBottom: "dotted 1px #222", paddingBottom: "1rem", marginBottom: "1rem" }}>
+          <h1>{title}</h1>
+          <div style={{ display: "flex", justifyContent: "space-between"}}>
+            {subtitle && (
+              <span>{subtitle}</span>
+            )}
+            <Link className="right" href={returnLink.to}>&larr;{returnLink ? ` ${returnLink.label}` : ''}</Link>
+          </div>
         </div>
         <div>
           {children}
         </div>
-        <div>
-          <Link className="right" href={returnLink.to}>&larr;{returnLink ? ` ${returnLink.label}` : ''}</Link>
-        </div>
+        <Footer />
       </div>
     </div>
   )

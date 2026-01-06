@@ -6,15 +6,14 @@ export default function Poetry() {
   const poems: Array<DatedLinkListEntry> = getAllPoems().map(({ metadata, slug }) => ({
     title: metadata.title,
     to: `/poem/${slug}`,
-    subtitle: (metadata.date ? `, ${new Date(metadata.date).toLocaleString('default', { month: 'long' })}` : ''),
     date: metadata.date
   }))
 
   return (
-    <div>
+    <article>
       <div>
         <DatedLinkList links={poems}/>
       </div>
-    </div>
+    </article>
   )
 }
