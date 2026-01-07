@@ -10,6 +10,7 @@ html {
 
   --link-color: #2060c8;
   --text-color: #333;
+  --header-line-color: #a1a1a1;
 
   color: var(--text-color);
 }
@@ -20,77 +21,20 @@ html {
   line-height: 1.6;
 }
 
-/* .main { */
-  /* max-width: 35rem; */
-  /* margin: auto; */
-  /* padding: 3rem 1.5rem; */
-  /* margin-bottom: 0rem !important; */
-/* } */
-
-/* Content layout */
-/* .content { */
-  /* display: flex; */
-  /* gap: 2rem; */
-  /* flex-direction: row; */
-/* } */
-
-/* .left, */
-/* .right { */
-  /* flex: 1 1 0; */
-  /* margin-bottom: 0 !important; */
-/* } */
-
-/* div:not(:last-child) { */
-  /* margin-bottom: 1.5rem; */
-/* } */
-
-
 /* Misc */
 .bioPic {
   width: 15rem;
-}
-
-/* .bioRight { */
-/* } */
-
-/* .header { */
-  /* line-height: 2rem; */
-/* } */
-
-/* .subheader { */
-  /* margin: 2rem 0; */
-/* } */
-
-/* .banner { */
-  /* margin-bottom: 2rem !important; */
-/* } */
-
-/* .header.name { */
-  /* width: 20rem; */
-/* } */
-
-.linkbox {
-  display: flex;
-  flex-direction: column;
-  gap: 0.5rem;
-}
-
-.linkbox div {
-  display: flex;
-  flex-direction: row;
-  gap: 1rem;
-  margin: 0 !important;
 }
 
 .blogEntry {
   display: flex;
 }
 
-/* .blogImg { */
-  /* width: 100%; */
-  /* height: auto; */
-  /* margin-bottom: 1.5rem; */
-/* } */
+.blogImg {
+  width: 100%;
+  height: auto;
+  margin-bottom: 1.5rem;
+}
 
 .projectEntry {
   > div:first-child {
@@ -109,77 +53,24 @@ ul {
   margin-left: 1rem;
 }
 /* PICO-8 game page */
-/* .gameFooter { */
-  /* margin-top: 1.5rem; */
-/* } */
+.gameFooter {
+  margin-top: 1.5rem;
+}
 
-/* .gameScreen { */
-  /* position: relative; */
-  /* padding-top: 75%; */
-  /* height: 0 */
-/* } */
+.gameScreen {
+  position: relative;
+  padding-top: 75%;
+  height: 0
+}
 
-/* .gameScreen>iframe { */
-  /* position: absolute; */
-  /* top: 0; */
-  /* left: 0; */
-  /* width: 100%; */
-  /* height: 100%; */
-  /* border: none; */
-/* } */
-
-/* Navbar */
-
-/* .hnavbar { */
-  /* display: flex; */
-  /* gap: 1rem; */
-  /* justify-content: end; */
-/* } */
-
-/* .vnavbar a, */
-/* .hnavbar a { */
-  /* text-decoration: none; */
-/* } */
-
-/* .vnavbar a:hover, */
-/* .hnavbar a:hover { */
-  /* text-decoration: underline; */
-/* } */
-
-/* .navbar>.selected { */
-  /* text-decoration: underline; */
-/* } */
-
-/* Element overrides */
-/* a { */
-  /* color: #222; */
-  /* text-decoration: underline; */
-  /* text-underline-offset: 4px; */
-/* } */
-
-/* ul { */
-  /* margin-left: 1rem; */
-/* } */
-
-/* p:not(:last-child) { */
-  /* margin-bottom: 1.5rem; */
-/* } */
-
-/* light/dark mode */
-/* @media (prefers-color-scheme: light) { */
-  /* html { */
-    /* color: #222; */
-    /* background: #f9f5ea; */
-  /* } */
-
-  /* a { */
-    /* color: #222; */
-  /* } */
-
-  /* a:hover { */
-    /* color: #508DB4; */
-  /* } */
-/* } */
+.gameScreen>iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+}
 
 @media (prefers-color-scheme: dark) {
   html {
@@ -212,12 +103,9 @@ article {
   }
 
   h2 {
-    border-bottom: dotted 1px var(--text-color)
+    border-bottom: solid 1px var(--header-line-color)
   }
 }
-
-
-
 
 /* SITE STYLING 2.0 */
 
@@ -239,17 +127,31 @@ h1 {
 }
 
 .site-header {
-  > h1 {
-    width: 20rem;
+  > h2 {
+    width: 15rem;
+    line-height: 1;
+    font-size: 1.6rem;
+
+    
   }
 
   display: flex;
   /* justify-content: space-between; */
   flex-direction: column;
   margin-bottom: 1.5rem;
-  gap: 1.5rem 0;
-  border-bottom: dotted 1px #222;
-  padding-bottom: 1rem;
+  gap: 1rem 0;
+  border-bottom: solid 1px var(--header-line-color);
+  padding-bottom: 1.4rem;
+  position: relative;
+
+  &::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: 2px;
+      border-bottom: 1px solid var(--header-line-color);
+  }
 }
 
 .content-cols {
@@ -300,7 +202,17 @@ a {
   display: flex;
   justify-content: space-between;
   margin-top: 1.5rem;
-  padding: 1rem 0;
-  border-top: dotted 1px black;
+  padding: 1.2rem 0;
+  border-top: solid 1px var(--header-line-color);
+  position: relative;
+
+  &::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 2px;
+      border-top: 1px solid var(--header-line-color);
+  }
 }
 

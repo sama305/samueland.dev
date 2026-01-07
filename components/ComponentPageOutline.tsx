@@ -15,7 +15,7 @@ export default function ComponentPageOutline({ title, subtitle, children, return
   return (
     <div>
       <div>
-        <div style={{ borderBottom: "dotted 1px #222", paddingBottom: "1rem", marginBottom: "1rem" }}>
+        <div style={{ borderBottom: "solid 1px var(--header-line-color)", paddingBottom: "1rem", marginBottom: "1rem" }}>
           <h1>{title}</h1>
           <div style={{ display: "flex", justifyContent: "space-between"}}>
             {subtitle && (
@@ -27,7 +27,6 @@ export default function ComponentPageOutline({ title, subtitle, children, return
         <div>
           {children}
         </div>
-        <Footer />
       </div>
     </div>
   )

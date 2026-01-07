@@ -20,7 +20,7 @@ export default async function PoemPage({ params }: PoemParams) {
   if (!poem) return notFound()
 
   return (
-    <div>
+    <article>
       <ComponentPageOutline
         title={poem.metadata.title}
         subtitle={poem.metadata.date ? `${poem.metadata.date}` : undefined}
@@ -28,6 +28,6 @@ export default async function PoemPage({ params }: PoemParams) {
       >
         <MDXRemote source={poem.content} />
       </ComponentPageOutline>
-    </div>
+    </article>
   )
 }

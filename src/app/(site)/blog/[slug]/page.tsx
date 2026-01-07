@@ -21,12 +21,14 @@ export default async function BlogPostPage({ params }: BlogPostParams) {
   if (!post) return notFound()
 
   return (
-    <ComponentPageOutline
-      title={post.metadata.title}
-      subtitle={`${stringToDateString(post.metadata.date)}${post.metadata.updateDate ? `, last updated ${stringToDateString(post.metadata.updateDate)}` : ''}`}
-      returnLink={{ to: '/blog', label: 'See other posts'}}
-    >
-      <MDXRemote source={post.content} />
-    </ ComponentPageOutline>
+    <article>
+      <ComponentPageOutline
+        title={post.metadata.title}
+        subtitle={`${stringToDateString(post.metadata.date)}${post.metadata.updateDate ? `, last updated ${stringToDateString(post.metadata.updateDate)}` : ''}`}
+        returnLink={{ to: '/blog', label: 'See other posts'}}
+      >
+        <MDXRemote source={post.content} />
+      </ ComponentPageOutline>
+    </article>
   )
 }

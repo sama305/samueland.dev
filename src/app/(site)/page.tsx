@@ -15,10 +15,6 @@ export default function About() {
       </article>
       <div className="bio-media">
         <img alt="Myself, framed bottom right, standing with my arms on my sides. In the distance the Hollywood sign can be seen." className="bioPic" src="/me.jpg" />
-        <div className="linkbox">
-          <div>
-          </div>
-        </div>
       </div>
     </div>
   );

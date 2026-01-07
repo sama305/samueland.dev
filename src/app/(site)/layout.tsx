@@ -20,9 +20,9 @@ export default function RootLayout({
       <body>
         <div className="main">
           <div className="site-header">
-            <h1>
+            <h2>
               Samuel Morgan Anderson
-            </h1>
+            </h2>
             <Navbar links={mainNavbarLinks}/>
           </div>
           {children}

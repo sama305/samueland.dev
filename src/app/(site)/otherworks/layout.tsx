@@ -8,7 +8,9 @@ export default function RootLayout({
 }>) {
   return (    
     <div className="content-cols">
-      <Navbar links={miscLinks} vertical={true}/>
+      <div style={{ minWidth: "4rem" }}>
+        <Navbar links={miscLinks} vertical={true}/>
+      </div>
       <div>{children}</div>
     </div>
   );
