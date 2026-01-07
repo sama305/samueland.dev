@@ -13,7 +13,7 @@ export default function Projects() {
           </div>
           <article>
             <p>
-              As a Software Engineer at Educational Networks, I help to maintain and build complex systems in Java, utilizing parallelism and multithreading to ensure speedy and efficient products.
+              As a Software Engineer at Educational Networks, I help to maintain and improve a sophisticated content management system (CMS) in Java used by hundreds of schools across the country, utilizing parallelism and multithreading to ensure speedy and efficient products.
             </p>
           </article>
         </div>
@@ -52,13 +52,13 @@ export default function Projects() {
           </div>
           <article>
             <p>
-              <a className="social" href="https://librewrite.com" target="_blank">Librewrite.com</a> is a free webapp for practicing creative writing. It facilitates the exercise of <i>free writing</i>, a method of practicing writing where you write nonstop for a set amount of time, sometimes working from a prompt.
+              <a className="social" href="https://librewrite.com" target="_blank">Librewrite.com</a> is a free webapp for practicing creative writing. It facilitates the practice of <i>free writing</i>, a writing exercise where you write nonstop for a set amount of time, sometimes working from a prompt.
             </p>
             <p>
-              Just as in free writing, pieces are written within timed, configurable rounds, with optional prompts for a greater challenge. After the round, your written work is saved and be viewed, edited, or shared.
+              Just as in free writing, you can write within timed, configurable rounds with optional prompts for a greater challenge. After the round, your written work is saved and be viewed, edited, or shared.
             </p>
             <p>
-              Additionally, you can easily create/share custom rounds, which are rounds where the settings/prompts are chosen beforehand for anyone who plays it. This feature was specifically designed with teachers in mind, and makes sharing tailored prompts as easy as sending a link.
+              Additionally, you can easily create/share custom rounds: presets where the settings/prompts are chosen beforehand for anyone who plays it. This feature was specifically designed with teachers in mind and makes sharing tailored exercises as easy as sending a link.
             </p>
           </article>
         </div>

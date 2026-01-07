@@ -15,7 +15,7 @@ export const mainNavbarLinks: Array<LinkListEntry> = [
     to: "/blog"
   },
   {
-    title: "Other works",
+    title: "Other stuff",
     to: "/otherworks"
   }
 ]

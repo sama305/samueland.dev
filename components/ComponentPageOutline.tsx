@@ -16,7 +16,7 @@ export default function ComponentPageOutline({ title, subtitle, children, return
     <div>
       <div>
         <div style={{ borderBottom: "solid 1px var(--header-line-color)", paddingBottom: "1rem", marginBottom: "1rem" }}>
-          <h1>{title}</h1>
+          <h1 style={{ fontSize: "1.9em"}}>{title}</h1>
           <div style={{ display: "flex", justifyContent: "space-between"}}>
             {subtitle && (
               <span>{subtitle}</span>

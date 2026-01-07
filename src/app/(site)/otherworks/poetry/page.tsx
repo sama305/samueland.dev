@@ -13,7 +13,7 @@ export default function Poetry() {
 
   return (
     <article>
-      <p>Sometimes, I like to write poetry. They are very amateur, but I enjoyed making all of them. I hope you do too.</p>
+      <p>Sometimes, I like to write poetry. The poems are very amateur, but I enjoyed making all of them. Maybe you will too.</p>
       {poems.map(({ title, to, date }) => (
         <div className="blogEntry" key={title}>
           <div style={{ minWidth: "5.6rem" }}>{date}</div>
