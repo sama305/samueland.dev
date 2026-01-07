@@ -41,7 +41,7 @@ html {
     min-width: 11rem;
   }
 
-  margin-bottom: 1.5rem;
+  margin-bottom: 2rem;
   gap: 1rem;
 
   .project-tools {
@@ -112,7 +112,7 @@ article {
 .main {
   margin: auto;
   max-width: 36rem;
-  padding: 1.5rem 0 0 1.5rem;
+  padding: 1.5rem 0;
 }
 
 h1, h2, h3 {
@@ -156,7 +156,7 @@ h1 {
 
 .content-cols {
   display: flex;
-  gap: 1.5rem;
+  gap: 1rem;
   flex-direction: row;
 }
 
@@ -176,7 +176,7 @@ h1 {
 
   .bioPic {
     margin: auto;
-  }  
+  }
 }
 
 .navbar {
@@ -206,7 +206,7 @@ a {
   display: flex;
   justify-content: space-between;
   margin-top: 1.5rem;
-  padding: 1.2rem 0;
+  padding-top: 1.2rem;
   border-top: solid 1px var(--header-line-color);
   position: relative;
 
@@ -218,5 +218,15 @@ a {
       top: 2px;
       border-top: 1px solid var(--header-line-color);
   }
+
+  .socials {
+    display: flex;
+    gap: 1rem;
+  }
 }
 
+hr {
+  border: none;
+  border-top: 1px dotted var(--header-line-color);
+  margin: 1rem 0;
+}

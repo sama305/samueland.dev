@@ -6,8 +6,8 @@ export default function Footer() {
   const currentPage = usePathname()
 
   return (
-    <div className="footer">
-      <div style={{ display: "flex", gap: "1rem"}}>
+    <div className="footer content-cols">
+      <div className="socials">
         <a href="mailto:andersonhenderson45@gmail.com" target="_blank">Email</a>
         <a href="https://www.linkedin.com/in/samuel-anderson-611488176/" target="_blank">LinkedIn</a>
         <a href="https://github.com/sama305" target="_blank">GitHub</a>
