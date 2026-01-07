@@ -21,7 +21,7 @@ export default function RootLayout({
         <div className="main">
           <div className="site-header">
             <h2>
-              ⛫ Samuel's Land 
+              &#10042; samueland 
             </h2>
             <Navbar links={mainNavbarLinks}/>
           </div>
