@@ -22,7 +22,7 @@ export default async function BlogPostPage({ params }: BlogPostParams) {
   if (!post) return notFound()
 
   return (
-    <Suspense fallback={(<>...Loading</>)}>
+    <Suspense fallback={(<>Loading...</>)}>
       <LibraryPage
         title={post.metadata.title}
         subtitle={`${stringToDateString(post.metadata.date)}${post.metadata.updateDate ? `, last updated ${stringToDateString(post.metadata.updateDate)}` : ''}`}
