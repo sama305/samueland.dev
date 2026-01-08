@@ -1,7 +1,5 @@
 "use client";
 
-import { usePathname } from "next/navigation";
-
 export default function Footer() {
   return (
     <div className="footer content-cols">
