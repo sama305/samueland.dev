@@ -35,7 +35,6 @@ export default function LibraryPage({
 
   return (
     <div>
-  
       <div className="library-page-header" style={title || subtitle ? { borderBottom: "solid 1px var(--header-line-color)"} : {}}>
         <div className="title">
           {title && (<h1>{title}</h1>)}
