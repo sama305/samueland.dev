@@ -1,5 +1,6 @@
 import Link from 'next/link'
-import PicoGame from '../../../../../components/PicoGame'
+import PicoGame from '../../../../../../components/PicoGame'
+import LibraryPage from '../../../../../../components/LibraryPage'
 
 interface GameParams {
   params: Promise<{
@@ -11,11 +12,8 @@ export default async function GamePage({ params }: GameParams) {
   const { gameName } = await params
 
   return (
-    <div>
+    <LibraryPage>
       <PicoGame gameName={gameName} />
-      <div className='gameFooter'>
-        <Link href={"/otherworks/games"}>&larr; See other games</Link>
-      </div>
-    </div>
+    </LibraryPage>
   )
 }
