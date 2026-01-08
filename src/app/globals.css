@@ -73,17 +73,13 @@ ul {
 }
 
 @media (prefers-color-scheme: dark) {
+
   html {
+    --text-color: #fff;
+    --header-line-color: #fff;
+    --link-color: #4d8aed;
     background: #141006;
-    color: #f9f5ea;
-  }
-
-  a {
-    color: #f9f5ea;
-  }
-
-  a:hover {
-    color: #45a5e0;
+    color: var(--text-color);
   }
 }
 
@@ -145,12 +141,12 @@ h1 {
   position: relative;
 
   &::after {
-      content: "";
-      position: absolute;
-      left: 0;
-      right: 0;
-      bottom: 2px;
-      border-bottom: 1px solid var(--header-line-color);
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 2px;
+    border-bottom: 1px solid var(--header-line-color);
   }
 }
 
