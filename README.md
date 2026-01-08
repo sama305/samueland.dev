@@ -4,22 +4,11 @@ My home page.
 
 # Changelog
 
-## [Unreleased]
-
-### Added
-
-* added a ton of poems
-* added work history to 'Portfolio'
+## [0.1.0]
 
 ### Changed
 
-* poems are sectioned by the year they were written
-* 'Garden' is now 'Other works'
-* 'Projects' is now 'Portfolio'
-* updated subtitles
-* updated preamble text
-* updated bio text
-* changelog now follows style of [keepachangelog](https://keepachangelog.com/en/1.1.0/)
+* like everything
 
 ### Removed
 
