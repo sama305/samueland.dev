@@ -2,48 +2,46 @@ export default function Projects() {
   return (
     <div>
       <div>
-        <div className="content projectEntry">
+      <article><h2>Work history</h2></article>
+    
+        <div className="content-cols projectEntry">
           <div>
             <div>
               <h3>Educational Networks, Inc.</h3>
               June 2025 &mdash; Present
             </div>
-            <div>
-              <span><a href="https://www.educationalnetworks.net/" target="_blank">Visit their site</a></span>
-            </div>
           </div>
-          <div className="right">
+          <article>
             <p>
-              As a Software Engineer at Educational Networks, I help to maintain and build complex systems in Java, utilizing parallelism and multithreading to ensure speedy and efficient products.
+              As a Software Engineer at Educational Networks, I help to maintain and improve a sophisticated content management system (CMS) in Java used by hundreds of schools across the country, utilizing parallelism and multithreading to ensure speedy and efficient products.
             </p>
-          </div>
+          </article>
         </div>
-        <div className="content projectEntry">
+        <div className="content-cols projectEntry">
           <div>
             <div>
               <h3>Watsco Ventures</h3>
               May 2023 &mdash; June 2025
             </div>
-            <div>
-              <span><a href="https://www.watscoventures.com/" target="_blank">Visit their site</a></span>
-            </div>
           </div>
-          <div className="right">
+          <article>
             <p>
               While interning as a Junior Software Developer at Watsco Ventures, I used various web frameworks such as Nuxt, Nest.js, and Vue to create software that helps HVAC contractors make more contracts, more efficiently.
             </p>
-          </div>
+          </article>
         </div>
       </div>
-      <h2 className="subheader">Notable Projects</h2>
+
+      <article><h2>Notable projects</h2></article>
+    
       <div>
-        <div className="content projectEntry">
+        <div className="content-cols projectEntry">
           <div>
             <div>
               <h3>Librewrite.com</h3>
               Oct 2024 &mdash; Present
             </div>
-            <div>
+            <div className="project-tools">
               <span>Made using...</span>
               <ul>
                 <li><a href="https://nextjs.org" target="_blank">Next.js</a></li>
@@ -52,25 +50,25 @@ export default function Projects() {
               </ul>
             </div>
           </div>
-          <div className="right">
+          <article>
             <p>
-              <a className="social" href="https://librewrite.com" target="_blank">Librewrite.com</a> is a free webapp for practicing creative writing. It facilitates the exercise of <i>free writing</i>, a method of practicing writing where you write nonstop for a set amount of time, sometimes working from a prompt.
+              <a className="social" href="https://librewrite.com" target="_blank">Librewrite.com</a> is a free webapp for practicing creative writing. It facilitates the practice of <i>free writing</i>, a writing exercise where you write nonstop for a set amount of time, sometimes working from a prompt.
             </p>
             <p>
-              Just as in free writing, pieces are written within timed, configurable rounds, with optional prompts for a greater challenge. After the round, your written work is saved and be viewed, edited, or shared.
+              Just as in free writing, you can write within timed, configurable rounds with optional prompts for a greater challenge. After the round, your written work is saved and be viewed, edited, or shared.
             </p>
             <p>
-              Additionally, you can easily create/share custom rounds, which are rounds where the settings/prompts are chosen beforehand for anyone who plays it. This feature was specifically designed with teachers in mind, and makes sharing tailored prompts as easy as sending a link.
+              Additionally, you can easily create/share custom rounds: presets where the settings/prompts are chosen beforehand for anyone who plays it. This feature was specifically designed with teachers in mind and makes sharing tailored exercises as easy as sending a link.
             </p>
-          </div>
+          </article>
         </div>
-        <div className="content projectEntry">
+        <div className="content-cols projectEntry">
           <div>
             <div>
               <h3>Arduvia</h3>
               May &mdash; Dec 2024
             </div>
-            <div>
+            <div className="project-tools">
               <span>Made using...</span>
               <ul>
                 <li><a target="_blank" href="https://inertiajs.com">Inertia.js</a></li>
@@ -81,7 +79,7 @@ export default function Projects() {
               </ul>
             </div>
           </div>
-          <div className="right">
+          <article>
             <p>
               Originally created as a senior class project, <a href="https://arduvia.com" target="_blank">Arduvia</a> is a
               novel social-media "platform" which replaces
@@ -93,15 +91,15 @@ export default function Projects() {
             <p>
               By replacing conventional algorithms with a more visual, far less linear way of finding trending posts, Arduvia connects users beyond the content of each post. This in turn creates a highly global, diverse community of engaged users.
             </p>
-          </div>
+          </article>
         </div>
-        <div className="content projectEntry">
+        <div className="content-cols projectEntry">
           <div>
             <div>
               <h3>Order-Tracker</h3>
               Feb &mdash; Apr 2024
             </div>
-            <div>
+            <div className="project-tools">
               <span>Made using...</span>
               <ul>
                 <li><a target="_blank" href="https://angular.dev">Angular</a></li>
@@ -111,7 +109,7 @@ export default function Projects() {
               </ul>
             </div>
           </div>
-          <div className="right">
+          <article>
             <p>
               The aptly titled <a className="social" href="https://github.com/danieltdang/Order-Tracker" target="_blank">Order-Tracker</a> is a webapp intended for compiling orders placed through a variety of online shops (e.g. Shopify, Amazon) into a single, centralized location. It was created with three others as the COP4521 final project.
             </p>
@@ -121,7 +119,7 @@ export default function Projects() {
             <p>
               Finally, users can "pay" (as this was a school project, it was only implemented as a proof of concept) for a premium subscription which grants access to more useful metrics/order data and the ability to interact with some orders.
             </p>
-          </div>
+          </article>
         </div>
       </div>
     </div>

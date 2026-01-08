@@ -15,7 +15,7 @@ export const mainNavbarLinks: Array<LinkListEntry> = [
     to: "/blog"
   },
   {
-    title: "Other works",
+    title: "Other stuff",
     to: "/otherworks"
   }
 ]
@@ -23,10 +23,6 @@ export const mainNavbarLinks: Array<LinkListEntry> = [
 
 /* "My Stuff" navbar */
 export const miscLinks: Array<LinkListEntry> = [
-  {
-    title: "Preamble",
-    to: "/otherworks"
-  },
   {
     title: "PICO-8",
     to: "/otherworks/games"

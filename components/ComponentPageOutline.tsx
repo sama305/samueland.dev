@@ -14,19 +14,17 @@ export default function ComponentPageOutline({ title, subtitle, children, return
   return (
     <div>
       <div>
-        <div>
-          <h1 className="header">{title}</h1>
-        </div>
-        <div>
-          {subtitle && (
-            <p>{subtitle}</p>
-          )}
+        <div style={{ borderBottom: "solid 1px var(--header-line-color)", paddingBottom: "1rem", marginBottom: "1rem" }}>
+          <h1 style={{ fontSize: "1.9em"}}>{title}</h1>
+          <div style={{ display: "flex", justifyContent: "space-between"}}>
+            {subtitle && (
+              <span>{subtitle}</span>
+            )}
+            <Link className="right" href={returnLink.to}>&larr;{returnLink ? ` ${returnLink.label}` : ''}</Link>
+          </div>
         </div>
         <div>
           {children}
-        </div>
-        <div>
-          <Link className="right" href={returnLink.to}>&larr;{returnLink ? ` ${returnLink.label}` : ''}</Link>
         </div>
       </div>
     </div>
