@@ -24,7 +24,7 @@ export default function Misc() {
       </div>
       <article>
         <p>Welcome to <strong>The Library</strong>. Here, I explore various subjects and catalog my own thoughts and experiences with them. This is a <i>personal wiki</i>.</p>
-        <p>Each "book" on the right links to a topic; each topic may include links to other pages, books or subtopics. The books are comprised of my subjective experience with each topic and may not be accurate.</p>
+        <p>Each "book" on the right links to a topic; each topic may include links to other pages or subtopics. The books are comprised of my subjective experience with each topic and are probably inaccurate.</p>
       </article>
     </div>
   )

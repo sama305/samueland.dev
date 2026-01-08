@@ -7,11 +7,15 @@ import { usePathname, useSearchParams } from "next/navigation";
 export default function LibraryPage({
   children,
   title,
-  subtitle
+  subtitle,
+  returnLink,
+  returnLabel
 }: Readonly<{
   children: React.ReactNode,
   title?: string,
   subtitle?: string,
+  returnLink?: string,
+  returnLabel?: string
 }>) {
   const searchParams = useSearchParams();
   const currentPage = usePathname()
@@ -41,7 +45,7 @@ export default function LibraryPage({
         </div>
         {currentPage !== libraryBaseUrl && (
           <div className="link">
-            <Link href={`${libraryBaseUrl}${libraryDict[backPageStr]}${paramsStr}`}>&larr; Back to '{backPageStr}'</Link>
+            <Link href={returnLink ? returnLink : `${libraryBaseUrl}${libraryDict[backPageStr]}${paramsStr}`}>{returnLabel ? returnLabel : (<>&larr; Back to '{backPageStr}'</>)}</Link>
           </div>
         )}
       </div>

@@ -2,7 +2,7 @@ import { getAllPostSlugs, getPostBySlug } from '@/lib/posts'
 import { stringToDateString } from "@/lib"
 import { MDXRemote } from 'next-mdx-remote/rsc'
 import { notFound } from 'next/navigation'
-import ComponentPageOutline from '../../../../../components/ComponentPageOutline'
+import LibraryPage from '../../../../../components/LibraryPage'
 
 interface BlogPostParams {
   params: Promise<{
@@ -21,14 +21,15 @@ export default async function BlogPostPage({ params }: BlogPostParams) {
   if (!post) return notFound()
 
   return (
-    <article>
-      <ComponentPageOutline
-        title={post.metadata.title}
-        subtitle={`${stringToDateString(post.metadata.date)}${post.metadata.updateDate ? `, last updated ${stringToDateString(post.metadata.updateDate)}` : ''}`}
-        returnLink={{ to: '/blog', label: 'See other posts'}}
-      >
+    <LibraryPage
+      title={post.metadata.title}
+      subtitle={`${stringToDateString(post.metadata.date)}${post.metadata.updateDate ? `, last updated ${stringToDateString(post.metadata.updateDate)}` : ''}`}
+      returnLink="/blog"
+      returnLabel="&larr; Other posts"
+    >
+      <article>
         <MDXRemote source={post.content} />
-      </ ComponentPageOutline>
-    </article>
+      </article>
+    </ LibraryPage>
   )
 }

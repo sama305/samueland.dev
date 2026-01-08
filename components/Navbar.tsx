@@ -18,7 +18,7 @@ export default function Navbar({ className, links, vertical }: NavbarProps) {
         <a
           key={l.title}
           href={l.to}
-          className={l.to === currentPage ? 'selected' : ''}
+          className={l.to !== '/' && currentPage.includes(l.to) || l.to === currentPage ? 'selected' : ''}
         >
           {l.title}
         </a>

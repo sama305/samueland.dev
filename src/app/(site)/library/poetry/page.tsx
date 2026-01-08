@@ -14,7 +14,7 @@ export default function Poetry() {
   return (
     <LibraryPage
       title="Poetry"
-      subtitle={`The language of life.`}
+      subtitle={`The language of our souls.`}
     >
       <article>
         <p><strong>Poetry</strong> is an ancient art of language; in it, language’s rhythmic and aesthetic qualities are used to evoke unnamed emotions and subtle ideas. It has a long history of use by humans; so long, in fact, that it may even predate literacy.</p>
@@ -22,7 +22,8 @@ export default function Poetry() {
         <p>The important thing is to allow yourself to write freely. Once you find your groove, words will spill from your mind like a waterfall and you’ll read over your hard work with pride. I find it very rewarding.</p>
 
 
-        <h2>Some of my poems</h2>
+        <h2>Assorted poems</h2>
+        <p>All of these were written by me. In the future, I might try to keep a list of poems by others I've enjoyed.</p>
         <div>
           {poems.map(({ title, to, date }) => (
             <div className="blogEntry" key={title}>
