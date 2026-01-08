@@ -1,3 +1,5 @@
+"use client"
+
 import { getAllPostSlugs, getPostBySlug } from '@/lib/posts'
 import { stringToDateString } from "@/lib"
 import { MDXRemote } from 'next-mdx-remote/rsc'
