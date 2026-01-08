@@ -1,7 +1,6 @@
 "use client";
 
 import { libraryBaseUrl, libraryDict } from "@/lib/navlists";
-import Navbar from "../../../../components/Navbar";
 import { usePathname } from "next/navigation";
 
 export default function Misc() {
