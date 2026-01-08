@@ -3,8 +3,6 @@
 import { usePathname } from "next/navigation";
 
 export default function Footer() {
-  const currentPage = usePathname()
-
   return (
     <div className="footer content-cols">
       <div className="socials">

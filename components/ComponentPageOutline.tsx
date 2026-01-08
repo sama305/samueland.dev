@@ -1,5 +1,4 @@
 import Link from "next/link";
-import Footer from "./Footer";
 
 interface ComponentPageOutline {
   title: string,

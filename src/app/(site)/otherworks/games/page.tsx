@@ -1,4 +1,3 @@
-import Link from "next/link"
 import LinkList from "../../../../../components/LinkList"
 import { experimentsList, gameList } from "@/lib/navlists"
 

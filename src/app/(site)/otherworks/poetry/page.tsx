@@ -1,7 +1,5 @@
 import { getAllPoems } from "@/lib/poems"
 import { DatedLinkListEntry } from "@/lib/types"
-import DatedLinkList from "../../../../../components/DatedLinkList"
-import { stringToDateString } from "@/lib"
 import Link from "next/link"
 
 export default function Poetry() {
