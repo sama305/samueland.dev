@@ -3,7 +3,6 @@ import { stringToDateString } from "@/lib"
 import { MDXRemote } from 'next-mdx-remote/rsc'
 import { notFound } from 'next/navigation'
 import LibraryPage from '../../../../../components/LibraryPage'
-import { Suspense } from 'react'
 
 interface BlogPostParams {
   params: Promise<{
@@ -22,17 +21,15 @@ export default async function BlogPostPage({ params }: BlogPostParams) {
   if (!post) return notFound()
 
   return (
-    <Suspense fallback={(<>Loading...</>)}>
-      <LibraryPage
-        title={post.metadata.title}
-        subtitle={`${stringToDateString(post.metadata.date)}${post.metadata.updateDate ? `, last updated ${stringToDateString(post.metadata.updateDate)}` : ''}`}
-        returnLink="/blog"
-        returnLabel="&larr; Other posts"
-      >
-        <article>
-          <MDXRemote source={post.content} />
-        </article>
-      </ LibraryPage>
-    </Suspense>
+    <LibraryPage
+      title={post.metadata.title}
+      subtitle={`${stringToDateString(post.metadata.date)}${post.metadata.updateDate ? `, last updated ${stringToDateString(post.metadata.updateDate)}` : ''}`}
+      returnLink="/blog"
+      returnLabel="&larr; Other posts"
+    >
+      <article>
+        <MDXRemote source={post.content} />
+      </article>
+    </ LibraryPage>
   )
 }
