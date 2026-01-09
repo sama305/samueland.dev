@@ -110,85 +110,85 @@ export const books: Array<{
   {
     title: "A Room with a View (2nd read)",
     author: "E. M. Forster",
-    yearPublished: "",
+    yearPublished: "1908",
     dateRead: "Nov 2025"
   },
   {
     title: "O Pioneers!",
     author: "Willa Cather",
-    yearPublished: "",
+    yearPublished: "1913",
     dateRead: "Nov 2025"
   },
   {
     title: "A Passage to India",
     author: "E. M. Forster",
-    yearPublished: "",
+    yearPublished: "1924",
     dateRead: "Nov 2025"
   },
   {
     title: "Survival in Auswitz",
     author: "Primo Levi",
-    yearPublished: "",
+    yearPublished: "1947",
     dateRead: "Oct 2025"
   },
   {
     title: "The Odyssey",
     author: "Homer",
-    yearPublished: "",
+    yearPublished: "800 BC",
     dateRead: "Oct 2025"
   },
   {
     title: "The Picture of Dorian Gray",
     author: "Oscar Wilde",
-    yearPublished: "",
+    yearPublished: "1890",
     dateRead: "Aug 2025"
   },
   {
     title: "Exile and the Kingdom",
     author: "Albert Camus",
-    yearPublished: "",
+    yearPublished: "1957",
     dateRead: "Jul 2025"
   },
   {
     title: "Macbeth",
     author: "William Shakespeare",
-    yearPublished: "",
+    yearPublished: "1606",
     dateRead: "Jun 2025"
   },
   {
     title: "Death Comes for the Archbishop",
     author: "Willa Cather",
-    yearPublished: "",
+    yearPublished: "1927",
     dateRead: "Jun 2025"
   },
   {
     title: "The Adventures of Tom Sawyer",
     author: "Mark Twain",
-    yearPublished: "",
+    yearPublished: "1876",
     dateRead: "Jun 2025"
   },
   {
     title: "Rules for a Knight",
     author: "Ethan Hawke",
-    yearPublished: "",
+    yearPublished: "2015",
     dateRead: "May 2025"
   },
   {
     title: "The Great Gatsby",
     author: "F. Scott Fitzgerald",
-    yearPublished: "",
+    yearPublished: "1925",
     dateRead: "Apr 2025"
   },
   {
     title: "Writing Down the Bones",
     author: "Natalie Goldberg",
-    yearPublished: "",
+    yearPublished: "1986",
     dateRead: "Apr 2025"
   },
   {
     title: "The Stranger",
     author: "Albert Camus",
-    yearPublished: "",
+    yearPublished: "1942",
     dateRead: "Apr 2025"
   },
   {
@@ -200,7 +200,7 @@ export const books: Array<{
   {
     title: "1984",
     author: "George Orwell",
-    yearPublished: "1855",
+    yearPublished: "1949",
     dateRead: "Apr 2025"
   },
   {
@@ -212,229 +212,229 @@ export const books: Array<{
   {
     title: "A Summons to Memphis",
     author: "Peter Taylor",
-    yearPublished: "",
+    yearPublished: "1986",
     dateRead: "Mar 2025"
   },
   {
     title: "Brave New World",
     author: "Aldous Huxley",
-    yearPublished: "",
+    yearPublished: "1932",
     dateRead: "Feb 2025"
   },
   {
     title: "Neuromancer",
     author: "William Gibson",
-    yearPublished: "",
+    yearPublished: "1984",
     dateRead: "Jan 2025"
   },
   {
     title: "Do Androids Dream of Electric Sheep?",
     author: "Philip K. Dick",
-    yearPublished: "",
+    yearPublished: "1968",
     dateRead: "Jan 2025"
   },
   {
     title: "Martyr!",
     author: "Kaveh Akbar",
-    yearPublished: "",
+    yearPublished: "2024",
     dateRead: "Jan 2025"
   },
   {
     title: "Slouching Towards Bethlehem",
     author: "Joan Didion",
-    yearPublished: "",
+    yearPublished: "1968",
     dateRead: "Dec 2024"
   },
   {
     title: "Maus II",
     author: "Art Spiegelman",
-    yearPublished: "",
+    yearPublished: "1991",
     dateRead: "Nov 2024"
   },
   {
     title: "Heart of Darkness",
     author: "Joseph Conrad",
-    yearPublished: "",
+    yearPublished: "1899",
     dateRead: "Nov 2024"
   },
   {
     title: "The Duel",
     author: "Joseph Conrad",
-    yearPublished: "",
+    yearPublished: "1908",
     dateRead: "Nov 2024"
   },
   {
     title: "Pygmalion",
     author: "George Bernard Shaw",
-    yearPublished: "",
+    yearPublished: "1913",
     dateRead: "Oct 2024"
   },
   {
     title: "Maus I",
     author: "Art Spiegelman",
-    yearPublished: "",
+    yearPublished: "1986",
     dateRead: "Aug 2024"
   },
   {
     title: "State and Revolution",
     author: "Vladimir Lenin",
-    yearPublished: "",
+    yearPublished: "1917",
     dateRead: "Aug 2024"
   },
   {
     title: "Howl and Other Poems",
     author: "Allen Ginsberg",
-    yearPublished: "",
+    yearPublished: "1956",
     dateRead: "Aug 2024"
   },
   {
     title: "In the Garden of the North American Martyrs",
     author: "Tobias Wolff",
-    yearPublished: "",
+    yearPublished: "1981",
     dateRead: "Jul 2024"
   },
   {
     title: "The Lord of the Rings",
     author: "J. R. R. Tolkien",
-    yearPublished: "",
+    yearPublished: "1954",
     dateRead: "Jul 2024"
   },
   {
     title: "The Hobbit",
     author: "J. R. R. Tolkien",
-    yearPublished: "",
+    yearPublished: "1937",
     dateRead: "Mar 2024"
   },
   {
     title: "Crime and Punishment",
     author: "Fyodor Dostoevsky",
-    yearPublished: "",
+    yearPublished: "1866",
     dateRead: "Feb 2024"
   },
   {
     title: "The Wager",
     author: "David Grann",
-    yearPublished: "",
+    yearPublished: "2023",
     dateRead: "Jan 2024"
   },
   {
     title: "Notes from Underground",
     author: "Fyodor Dostoevsky",
-    yearPublished: "",
+    yearPublished: "1864",
     dateRead: "Dec 2023"
   },
   {
     title: "The Overcoat",
     author: "Nikolai Gogol",
-    yearPublished: "",
+    yearPublished: "1842",
     dateRead: "Dec 2023"
   },
   {
     title: "Slaughterhouse-Five",
     author: "Kurt Vonnegut Jr.",
-    yearPublished: "",
+    yearPublished: "1969",
     dateRead: "Nov 2023"
   },
   {
     title: "Moby Dick",
     author: "Herman Melville",
-    yearPublished: "",
+    yearPublished: "1851",
     dateRead: "Nov 2023"
   },
   {
     title: "Siddhartha",
     author: "Herman Hesse",
-    yearPublished: "",
+    yearPublished: "1922",
     dateRead: "Oct 2023"
   },
   {
     title: "Shoe Dog",
     author: "Phil Knight",
-    yearPublished: "",
+    yearPublished: "2016",
     dateRead: "Oct 2023"
   },
   {
     title: "Flatland",
     author: "Edwin A. Abbott",
-    yearPublished: "",
+    yearPublished: "1884",
     dateRead: "Aug 2023"
   },
   {
     title: "Blood Meridian",
     author: "Cormac McCarthy",
-    yearPublished: "",
+    yearPublished: "1985",
     dateRead: "Aug 2023"
   },
   {
     title: "Twenty Thousand Leagues Under the Sea",
     author: "Jules Verne",
-    yearPublished: "",
+    yearPublished: "1870",
     dateRead: "Jun 2023"
   },
   {
     title: "The Captain's Verses",
     author: "Pablo Neruda",
-    yearPublished: "",
+    yearPublished: "1952",
     dateRead: "May 2023"
   },
   {
     title: "The Zombie Survival Guide",
     author: "Max Brooks",
-    yearPublished: "",
+    yearPublished: "2003",
     dateRead: "May 2023"
   },
   {
     title: "Catch-22",
     author: "Joseph Heller",
-    yearPublished: "",
+    yearPublished: "1961",
     dateRead: "May 2023"
   },
   {
     title: '"What Do You Care What People Think?"',
     author: "Richard P. Feynman",
-    yearPublished: "",
+    yearPublished: "1988",
     dateRead: "Mar 2023"
   },
   {
     title: "City of Thieves",
     author: "David Benioff",
-    yearPublished: "",
+    yearPublished: "2008",
     dateRead: "Feb 2023"
   },
   {
     title: "Trout Fishing in America",
     author: "Richard Brautigan",
-    yearPublished: "",
+    yearPublished: "1967",
     dateRead: "Jan 2023"
   },
   {
     title: "Walden",
     author: "Henry David Thoreau",
-    yearPublished: "",
+    yearPublished: "1854",
     dateRead: "Jan 2023"
   },
   {
     title: "Nature",
     author: "Ralph Waldo Emerson",
-    yearPublished: "",
+    yearPublished: "1836",
     dateRead: "Dec 2022"
   },
   {
     title: "Ubik",
     author: "Philip K. Dick",
-    yearPublished: "",
+    yearPublished: "1969",
     dateRead: "Dec 2022"
   },
   {
     title: "The Silence of the Lambs",
     author: "Thomas Harris",
-    yearPublished: "",
+    yearPublished: "1988",
     dateRead: "Nov 2022"
   },
   {
     title: "In Dubious Battle",
     author: "John Steinbeck",
-    yearPublished: "",
+    yearPublished: "1936",
     dateRead: "Oct 2022"
   },
 ]

@@ -1,5 +1,6 @@
 import { Suspense } from "react"
 import LibraryPage from "../../../../../components/LibraryPage"
+import { books } from "@/lib/navlists"
 
 export default function Books() {
   return (
@@ -19,6 +20,14 @@ export default function Books() {
           <p>Out of all forms of media (TV, movies, etc.), I find reading to be the most among the immersive and affecting. Because of their heightened length and detail, books bring you into their worlds for days, weeks, and even months at a time. Movies can be very affecting, for sure, but often for a short time; books can stay with you for years.</p>
           <p>When I read, I feel I am learning about someone, an idea or sometimes even myself; in all cases, I'm interacting with a deeper part of my brain and stimulating my imagination. In a practical sense, this has improved my thinking skills, which extends into my writing and speaking. Both of these have improved noticeably since I began reading (especially the former).</p>
           <h2>Books I have read</h2>
+          <div>
+            {books.map(({ title, author, yearPublished, dateRead }) => (
+              <div className="blogEntry" key={title}>
+                <div style={{ minWidth: "5.6rem" }}>{dateRead}</div>
+                <div><i>{title}</i> by {author} ({yearPublished})</div>
+              </div>
+            ))}
+          </div>
         </article>
       </LibraryPage>
     </Suspense>
