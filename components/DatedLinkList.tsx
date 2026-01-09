@@ -23,12 +23,19 @@ export default function LinkList({ links }: LinkListProps) {
       {Object.keys(datedLinks).reverse().map((k => {
         return (
           <div key={k}>
-            <h2>{k}</h2>
+            <h3>{k}</h3>
             <ul>
             {datedLinks[parseInt(k)].map(({title, subtitle, to}) => {
               return (
-                <li key={to}>
-                  <span><Link href={to}>{title}</Link>{subtitle ? subtitle : ''}</span>
+                <li key={title}>
+                  <span>
+                    {to ? (
+                      <Link href={to} dangerouslySetInnerHTML={{ __html: title }}/>
+                    ) : (
+                      <span dangerouslySetInnerHTML={{ __html: title }} />
+                    )}
+                    {subtitle ? subtitle : ''}
+                  </span>
                 </li>
               )
             })}

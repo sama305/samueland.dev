@@ -8,5 +8,5 @@ export interface DatedLinkListEntry {
   title: string,
   subtitle?: string,
   date: string,
-  to: string
+  to?: string
 }
