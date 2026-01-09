@@ -1,7 +1,7 @@
 "use client";
 
-import { Link } from "lucide-react";
 import { libraryBaseUrl, libraryDict, libraryHomeName } from "@/lib/navlists";
+import Link from "next/link";
 import { usePathname } from "next/navigation";
 
 export default function LibraryPage({
