@@ -2,12 +2,16 @@ import LibraryPage from "../../../../../components/LibraryPage"
 import LinkList from "../../../../../components/LinkList"
 import { experimentsList, gameList } from "@/lib/navlists"
 
-export default function Games() {
+export default async function Games({ searchParams }: {
+  searchParams: Promise<{ [key: string]: string | string[] | undefined }>
+}) {
+  const paramsMap = await searchParams
 
   return (
     <LibraryPage
       title="PICO-8"
       subtitle="A retro, tiny fantasy console."
+      paramsMap={paramsMap} 
     >
       <article>
         <p><strong><a href="https://www.lexaloffle.com/pico-8.php">PICO-8</a></strong> is a fantasy console by Lexaloffle Games which allows you to easily make and share tiny games and programs.</p>

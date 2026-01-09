@@ -4,17 +4,20 @@ import Link from "next/link"
 import LibraryPage from "../../../../../components/LibraryPage"
 import { libraryBaseUrl } from "@/lib/navlists"
 
-export default function Poetry() {
+export default async function Poetry({ searchParams }: { searchParams: Promise<{ [key: string]: string | string[] | undefined }> }) {
   const poems: Array<DatedLinkListEntry> = getAllPoems().map(({ metadata, slug }) => ({
     title: metadata.title,
     to: `/poetry/${slug}`,
     date: metadata.date
   }))
 
+  const paramsMap = await searchParams
+
   return (
     <LibraryPage
       title="Poetry"
       subtitle={`The language of our souls.`}
+      paramsMap={paramsMap}
     >
       <article>
         <p><strong>Poetry</strong> is an ancient art of language; in it, language’s rhythmic and aesthetic qualities are used to evoke unnamed emotions and subtle ideas. It has a long history of use by humans; so long, in fact, that it may even predate literacy.</p>

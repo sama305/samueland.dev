@@ -1,11 +1,14 @@
 import LibraryPage from "../../../../../components/LibraryPage"
 import { books } from "@/lib/navlists"
 
-export default function Books() {
+export default async function Books({ searchParams }: { searchParams: Promise<{ [key: string]: string | string[] | undefined }> }) {
+  const paramsMap = await searchParams
+
   return (
     <LibraryPage
       title="Books"
       subtitle={`The tomes of knowledge.`}
+      paramsMap={paramsMap}
     >
       <article>
         <p>A <strong>book</strong> is a collection of words (usually binded between two covers or packaged digitally) which attempts to express an idea or story. As opposed to papers and pamphlets, which hold a small amount of words, books tend to have words numbering in the tens if not hundreds of thousands.</p>

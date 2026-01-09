@@ -6,7 +6,8 @@ import LibraryPage from '../../../../../../components/LibraryPage'
 interface PoemParams {
   params: Promise<{
     slug: string
-  }>
+  }>,
+  searchParams: Promise<{ [key: string]: string | string[] | undefined }>
 }
 
 export async function generateStaticParams() {
@@ -14,15 +15,18 @@ export async function generateStaticParams() {
   return slugs.map(slug => ({ slug }))
 }
 
-export default async function PoemPage({ params }: PoemParams) {
+export default async function PoemPage({ params, searchParams }: PoemParams) {
   const { slug } = await params
   const poem = getPoemBySlug(slug)
   if (!poem) return notFound()
+
+  const paramsMap = await searchParams
 
   return (
     <LibraryPage
       title={poem.metadata.title}
       subtitle={poem.metadata.date ? `${poem.metadata.date}` : undefined}
+      paramsMap={paramsMap}
     >
       <article>
         <MDXRemote source={poem.content} />
