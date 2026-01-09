@@ -1,10 +1,10 @@
 import { getAllPoems } from "@/lib/poems"
-import { DatedLinkListEntry } from "@/lib/types"
+import { DatedLinkListEntry, DefaultPageParams } from "@/lib/types"
 import Link from "next/link"
 import LibraryPage from "../../../../../components/LibraryPage"
 import { libraryBaseUrl } from "@/lib/navlists"
 
-export default async function Poetry({ searchParams }: { searchParams: Promise<{ [key: string]: string | string[] | undefined }> }) {
+export default async function Poetry({ searchParams }: DefaultPageParams) {
   const poems: Array<DatedLinkListEntry> = getAllPoems().map(({ metadata, slug }) => ({
     title: metadata.title,
     to: `/poetry/${slug}`,

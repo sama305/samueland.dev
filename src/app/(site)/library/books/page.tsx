@@ -1,8 +1,9 @@
 import LibraryPage from "../../../../../components/LibraryPage"
 import DatedLinkList from "../../../../../components/DatedLinkList"
 import { books } from "@/lib/navlists"
+import { DefaultPageParams } from "@/lib/types"
 
-export default async function Books({ searchParams }: { searchParams: Promise<{ [key: string]: string | string[] | undefined }> }) {
+export default async function Books({ searchParams }: DefaultPageParams) {
   const paramsMap = await searchParams
 
   return (

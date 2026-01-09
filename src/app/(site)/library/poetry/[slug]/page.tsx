@@ -2,12 +2,12 @@ import { MDXRemote } from 'next-mdx-remote/rsc'
 import { notFound } from 'next/navigation'
 import { getAllPoemSlugs, getPoemBySlug } from '@/lib/poems'
 import LibraryPage from '../../../../../../components/LibraryPage'
+import { DefaultPageParams } from '@/lib/types'
 
 interface PoemParams {
   params: Promise<{
     slug: string
-  }>,
-  searchParams: Promise<{ [key: string]: string | string[] | undefined }>
+  }>
 }
 
 export async function generateStaticParams() {
@@ -15,7 +15,7 @@ export async function generateStaticParams() {
   return slugs.map(slug => ({ slug }))
 }
 
-export default async function PoemPage({ params, searchParams }: PoemParams) {
+export default async function PoemPage({ params, searchParams }: PoemParams & DefaultPageParams) {
   const { slug } = await params
   const poem = getPoemBySlug(slug)
   if (!poem) return notFound()

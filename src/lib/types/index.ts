@@ -10,3 +10,7 @@ export interface DatedLinkListEntry {
   date: string,
   to?: string
 }
+
+export interface DefaultPageParams {
+  searchParams: Promise<{ [key: string]: string | string[] | undefined }>
+}

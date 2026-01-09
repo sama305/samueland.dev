@@ -34,7 +34,7 @@ export const libraryDict: Map = {
   "Poetry": `/poetry`,
   "PICO-8": `/games`,
   // "Music": `/music`,
-  // "Philosophy": `/philosophy`,
+  "Philosophy": `/philosophy`,
   // "Nature": `/nature`,
   // "Cooking": `/cooking`,
   // "Gaming": `/gaming`,

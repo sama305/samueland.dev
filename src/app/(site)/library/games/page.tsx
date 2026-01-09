@@ -1,10 +1,9 @@
+import { DefaultPageParams } from "@/lib/types"
 import LibraryPage from "../../../../../components/LibraryPage"
 import LinkList from "../../../../../components/LinkList"
 import { experimentsList, gameList } from "@/lib/navlists"
 
-export default async function Games({ searchParams }: {
-  searchParams: Promise<{ [key: string]: string | string[] | undefined }>
-}) {
+export default async function Games({ searchParams }: DefaultPageParams) {
   const paramsMap = await searchParams
 
   return (
