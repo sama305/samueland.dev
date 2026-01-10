@@ -1,14 +1,28 @@
 "use client"
 
-import { useState } from "react"
+import { useEffect, useState } from "react"
 import LibraryPage from "@/components/LibraryPage"
 
 export default function Edit() {
-  let [body, setBody] = useState("<article>\n</article>")
-  let [title, setTitle] = useState("New page")
-  let [subtitle, setSubtitle] = useState("Something witty.")
-  let [returnLabel, setReturnLabel] = useState("← Go back 'Home'")
-  
+  const [body, setBody] = useState("<article>\n</article>")
+  const [title, setTitle] = useState("New page")
+  const [subtitle, setSubtitle] = useState("Something witty.")
+  const [returnLabel, setReturnLabel] = useState("← Go back 'Home'")
+
+  useEffect(() => {
+    const handleBeforeUnload = (e: BeforeUnloadEvent) => {
+      e.preventDefault(); // Standard way to trigger the prompt
+      e.returnValue = ""; // Required for Chrome to show the confirmation
+    };
+
+    window.addEventListener("beforeunload", handleBeforeUnload);
+
+    // Cleanup the listener when component unmounts
+    return () => {
+      window.removeEventListener("beforeunload", handleBeforeUnload);
+    };
+  }, []);
+
   return (
     <div style={{ display: "flex", flexDirection: "column", gap: "1rem"}}>
       <article>

@@ -52,7 +52,7 @@ export const libraryDict: Map = {
   },
   "meaning": {
     path: "/philosophy/meaning",
-    label: "Meaning"
+    label: "Meaning of Life"
   },
   "read": {
     path: "/books/read",
