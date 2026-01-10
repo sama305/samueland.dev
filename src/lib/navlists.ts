@@ -23,18 +23,42 @@ export const mainNavbarLinks: Array<LinkListEntry> = [
 ]
 
 interface Map {
-  [key: string]: string
+  [key: string]: {
+    path: string,
+    label: string
+  }
 }
 
-export const libraryHomeName = "The Library"
-
 export const libraryDict: Map = {
-  [libraryHomeName]: "", // ! don't move this
-  "Books": `/books`,
-  "Poetry": `/poetry`,
-  "PICO-8": `/games`,
-  // "Music": `/music`,
-  "Philosophy": `/philosophy`,
+  "library": {
+    path: "/",
+    label: "The Library"
+  },
+  "books": {
+    path: "/books",
+    label: "Books"
+  },
+  "poetry": {
+    path: "/poetry",
+    label: "Poetry"
+  },
+  "games": {
+    path: "/games",
+    label: "PICO-8"
+  },
+  "philosophy": {
+    path: "/philosophy",
+    label: "Philosophy"
+  },
+  "meaning": {
+    path: "/philosophy/meaning",
+    label: "Meaning"
+  },
+  "read": {
+    path: "/books/read",
+    label: "Reading"
+  }
+  // "Music": "/music",
   // "Nature": `/nature`,
   // "Cooking": `/cooking`,
   // "Gaming": `/gaming`,

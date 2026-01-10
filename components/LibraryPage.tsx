@@ -1,6 +1,6 @@
 "use client";
 
-import { libraryBaseUrl, libraryDict, libraryHomeName } from "@/lib/navlists";
+import { libraryBaseUrl, libraryDict } from "@/lib/navlists";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 
@@ -10,59 +10,34 @@ export default function LibraryPage({
   subtitle,
   returnLink,
   returnLabel,
-  paramsMap
+  noTitle,
 }: Readonly<{
   children: React.ReactNode,
   title?: string,
   subtitle?: string,
   returnLink?: string,
   returnLabel?: string,
-  paramsMap?: { [key: string]: string | string[] | undefined } 
+  noTitle?: boolean
 }>) {
-  const currentPage = usePathname()
-
-  const searchParams = new URLSearchParams();
-
-  if (paramsMap) {
-    Object.entries(paramsMap).forEach(([key, value]) => {
-      if (Array.isArray(value)) {
-        value.forEach((v) => searchParams.append(key, v));
-      } else if (value) {
-        searchParams.set(key, value);
-      }
-    });
-  }
-
-  let backPageStr = libraryHomeName
-  let paramsStr   = ""
-
-  if (searchParams) {
-    const trailStr = searchParams.get('trail');
-    const trailArray = trailStr ? trailStr.split(',') : null;
-
-    if (trailArray) {
-      backPageStr = trailArray[trailArray.length - 1]
-      paramsStr = `?${trailArray.slice(0, trailArray.length - 1).join(",")}`
-    }
-  }
+  const pageSlices = usePathname().split("/")
+  const lastPage = pageSlices[pageSlices.length - 2]
+  const curPage = pageSlices[pageSlices.length - 1]
 
   return (
     <div>
       <div className="library-page-header" style={title || subtitle ? { borderBottom: "solid 1px var(--header-line-color)"} : {}}>
         <div className="title">
-          {title && (<h1>{title}</h1>)}
+          {!noTitle && (<h1>{title ? title : libraryDict[curPage].label}</h1>)}
           {subtitle && (
             <span><i>{subtitle}</i></span>
           )}
         </div>
         <div className="link">
-          {currentPage !== libraryBaseUrl && (
-            <Link
-              href={returnLink ? returnLink : `${libraryBaseUrl}${libraryDict[backPageStr]}${paramsStr}`}
-            >
-              {returnLabel ? returnLabel : (<>&larr; Back to '{backPageStr}'</>)}
-            </Link>
-          )}
+          <Link
+            href={returnLink ? returnLink : `${libraryBaseUrl}${libraryDict[lastPage].path}`}
+          >
+            {returnLabel ? returnLabel : (<>&larr; Back to '{libraryDict[lastPage].label}'</>)}
+          </Link>
         </div>
       </div>
       {children}

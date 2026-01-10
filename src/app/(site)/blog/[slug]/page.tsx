@@ -10,7 +10,7 @@ interface BlogPostParams {
   }>
 }
 
-export async function generateStaticParams() {
+export function generateStaticParams() {
   const slugs = getAllPostSlugs()
   return slugs.map(slug => ({ slug }))
 }

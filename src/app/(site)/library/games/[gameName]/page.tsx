@@ -1,6 +1,5 @@
 import PicoGame from '../../../../../../components/PicoGame'
 import LibraryPage from '../../../../../../components/LibraryPage'
-import { DefaultPageParams } from '@/lib/types'
 
 interface GameParams {
   params: Promise<{
@@ -8,13 +7,11 @@ interface GameParams {
   }>
 }
 
-export default async function GamePage({ params, searchParams }: GameParams & DefaultPageParams) {
+export default async function GamePage({ params }: GameParams) {
   const { gameName } = await params
 
-  const paramsMap = await searchParams
-
   return (
-    <LibraryPage paramsMap={paramsMap}>
+    <LibraryPage noTitle={true}>
       <PicoGame gameName={gameName} />
     </LibraryPage>
   )
