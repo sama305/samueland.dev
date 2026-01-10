@@ -11,36 +11,47 @@ export default function LibraryPage({
   returnLink,
   returnLabel,
   noTitle,
+  html
 }: Readonly<{
-  children: React.ReactNode,
+  children?: React.ReactNode,
   title?: string,
   subtitle?: string,
   returnLink?: string,
   returnLabel?: string,
-  noTitle?: boolean
+  noTitle?: boolean,
+  html?: string
 }>) {
   const pageSlices = usePathname().split("/")
   const lastPage = pageSlices[pageSlices.length - 2]
   const curPage = pageSlices[pageSlices.length - 1]
 
+  const showTitle = !noTitle && (title || libraryDict[curPage])
+  const showLink  = (returnLabel && returnLink) || libraryDict[lastPage]
+
   return (
     <div>
       <div className="library-page-header" style={title || subtitle ? { borderBottom: "solid 1px var(--header-line-color)"} : {}}>
         <div className="title">
-          {!noTitle && (<h1>{title ? title : libraryDict[curPage].label}</h1>)}
+          {showTitle && (<h1>{title ? title : libraryDict[curPage].label}</h1>)}
           {subtitle && (
             <span><i>{subtitle}</i></span>
           )}
         </div>
         <div className="link">
-          <Link
-            href={returnLink ? returnLink : `${libraryBaseUrl}${libraryDict[lastPage].path}`}
-          >
-            {returnLabel ? returnLabel : (<>&larr; Back to '{libraryDict[lastPage].label}'</>)}
-          </Link>
+          {showLink && (
+            <Link
+              href={returnLink ? returnLink : `${libraryBaseUrl}${libraryDict[lastPage].path}`}
+            >
+              {returnLabel ? returnLabel : (<>&larr; Back to '{libraryDict[lastPage].label}'</>)}
+            </Link>
+          )}
         </div>
       </div>
-      {children}
+      {html ? (
+        <div dangerouslySetInnerHTML={{ __html: html }} />
+      ) : (
+        <div>{children}</div>
+      )}
     </div>
   );
 }

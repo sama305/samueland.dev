@@ -1,5 +1,5 @@
-import LibraryPage from "../../../../../components/LibraryPage"
-import LinkList from "../../../../../components/LinkList"
+import LibraryPage from "@/components/LibraryPage"
+import LinkList from "@/components/LinkList"
 import { experimentsList, gameList } from "@/lib/navlists"
 
 export default function Games() {

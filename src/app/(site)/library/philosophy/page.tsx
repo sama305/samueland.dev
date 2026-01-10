@@ -1,4 +1,4 @@
-import LibraryPage from "../../../../../components/LibraryPage";
+import LibraryPage from "@/components/LibraryPage";
 import Link from "next/link";
 import { libraryBaseUrl } from "@/lib/navlists";
 

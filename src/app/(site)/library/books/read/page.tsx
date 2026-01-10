@@ -1,6 +1,6 @@
 import { books } from "@/lib/navlists";
-import DatedLinkList from "../../../../../../components/DatedLinkList";
-import LibraryPage from "../../../../../../components/LibraryPage";
+import DatedLinkList from "@/components/DatedLinkList";
+import LibraryPage from "@/components/LibraryPage";
 
 export default function ReadBooks() {
   return (

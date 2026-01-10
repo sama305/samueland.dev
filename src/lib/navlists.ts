@@ -39,7 +39,7 @@ export const libraryDict: Map = {
     label: "Books"
   },
   "poetry": {
-    path: "/poetry",
+    path: "/writing/poetry",
     label: "Poetry"
   },
   "games": {
@@ -57,7 +57,11 @@ export const libraryDict: Map = {
   "read": {
     path: "/books/read",
     label: "Reading"
-  }
+  },
+  "writing": {
+    path: "/writing",
+    label: "Writing"
+  },
   // "Music": "/music",
   // "Nature": `/nature`,
   // "Cooking": `/cooking`,

@@ -1,7 +1,7 @@
 import { MDXRemote } from 'next-mdx-remote/rsc'
 import { notFound } from 'next/navigation'
 import { getAllPoemSlugs, getPoemBySlug } from '@/lib/poems'
-import LibraryPage from '../../../../../../components/LibraryPage'
+import LibraryPage from '@/components/LibraryPage'
 
 interface PoemParams {
   params: Promise<{

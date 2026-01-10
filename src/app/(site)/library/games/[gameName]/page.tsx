@@ -1,5 +1,5 @@
-import PicoGame from '../../../../../../components/PicoGame'
-import LibraryPage from '../../../../../../components/LibraryPage'
+import PicoGame from '@/components/PicoGame'
+import LibraryPage from '@/components/LibraryPage'
 
 interface GameParams {
   params: Promise<{

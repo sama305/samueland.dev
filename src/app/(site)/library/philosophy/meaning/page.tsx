@@ -1,4 +1,4 @@
-import LibraryPage from "../../../../../../components/LibraryPage";
+import LibraryPage from "@/components/LibraryPage";
 
 export default function Meaning() {
   return (

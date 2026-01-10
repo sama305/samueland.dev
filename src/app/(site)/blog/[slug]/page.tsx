@@ -2,7 +2,7 @@ import { getAllPostSlugs, getPostBySlug } from '@/lib/posts'
 import { stringToDateString } from "@/lib"
 import { MDXRemote } from 'next-mdx-remote/rsc'
 import { notFound } from 'next/navigation'
-import LibraryPage from '../../../../../components/LibraryPage'
+import LibraryPage from '@/components/LibraryPage'
 
 interface BlogPostParams {
   params: Promise<{

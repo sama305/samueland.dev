@@ -1,7 +1,7 @@
 import { getAllPoems } from "@/lib/poems"
 import { DatedLinkListEntry } from "@/lib/types"
 import Link from "next/link"
-import LibraryPage from "../../../../../components/LibraryPage"
+import LibraryPage from "@/components/LibraryPage"
 import { libraryBaseUrl } from "@/lib/navlists"
 
 export default function Poetry() {
