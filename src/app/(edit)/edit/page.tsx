@@ -52,11 +52,8 @@ export default function Edit() {
   };
 
   return (
-    <div style={{ display: "flex", justifyContent: "space-between", gap: "1rem" }}>
-      <div style={{ display: "flex", flexDirection: "column", gap: "1rem", paddingRight: "1rem", borderRight: "dotted 1px var(--header-line-color)" }}>
-        <article>
-          <p>Use the text boxes below to set the title, subtitle, link label, and body of the generated library page below. This is used to see what a page looks like without having to use a code editor.</p>
-        </article>
+    <div style={{ display: "flex", justifyContent: "center", gap: "1.5rem" }}>
+      <div style={{ maxWidth: "36rem", width: "28rem", display: "flex", flexDirection: "column", gap: "1rem", paddingRight: "1.5rem", borderRight: "dotted 1px var(--header-line-color)" }}>
         <input value={title} onChange={(e) => setTitle(e.target.value)}/>
         <input value={subtitle} onChange={(e) => setSubtitle(e.target.value)}/>
         <input value={returnLabel} onChange={(e) => setReturnLabel(e.target.value)}/>
@@ -94,7 +91,7 @@ export default function Edit() {
         )}
       </div>
 
-      <div style={{ minWidth: "36rem", maxWidth: "36rem"}}>
+      <div style={{ flexGrow: "2", maxWidth: "36rem"}}>
         {useMarkdown ? (
           <LibraryPage
             title={title}
