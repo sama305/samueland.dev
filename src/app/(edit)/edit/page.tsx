@@ -34,8 +34,13 @@ export default function Edit() {
         setMdxSource(mdx)
         setErrorMessage(null)
       }
-      catch (e: any) {
-        setErrorMessage(e.message)
+      catch (e) {
+        if (e instanceof Error) {
+          setErrorMessage(e.message)
+        }
+        else {
+          setErrorMessage("An unknown error occurred.")
+        }
       }
     })()
   }, [body])
