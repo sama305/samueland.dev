@@ -23,9 +23,9 @@ export default async function BlogPostPage({ params }: BlogPostParams) {
   return (
     <LibraryPage
       title={post.metadata.title}
-      subtitle={`${stringToDateString(post.metadata.date)}${post.metadata.updateDate ? `, last updated ${stringToDateString(post.metadata.updateDate)}` : ''}`}
+      subtitle={`Written on ${stringToDateString(post.metadata.date)}${post.metadata.updateDate ? `, last updated ${stringToDateString(post.metadata.updateDate)}` : ''}`}
       returnLink="/blog"
-      returnLabel="&larr; Other posts"
+      returnLabel="&larr; Other blog posts"
     >
       <article>
         <MDXRemote source={post.content} />

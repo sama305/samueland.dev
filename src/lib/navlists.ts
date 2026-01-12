@@ -128,7 +128,15 @@ export const books: Array<{
   author: string,
   yearPublished: string,
   dateRead: string,
+  link?: string
 }> = [
+  {
+    title: "The Plague",
+    author: "Albert Camus",
+    yearPublished: "1947",
+    dateRead: "Jan 2026",
+    link: "/blog/2026-01-12-the-plague-review"
+  },
   {
     title: "Steppenwolf",
     author: "Herman Hesse",

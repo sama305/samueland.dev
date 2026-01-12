@@ -116,6 +116,11 @@ article {
   padding: 1.5rem 0;
 }
 
+.edit-main {
+  margin: auto;
+  padding: 1.5rem;
+}
+
 h1, h2, h3 {
   font-family: "Inter", sans-serif;
 }

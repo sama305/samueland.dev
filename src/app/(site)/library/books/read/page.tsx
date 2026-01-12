@@ -11,10 +11,11 @@ export default function ReadBooks() {
         <hr />
         <div>
           <DatedLinkList
-            links={books.map(({ title, author, yearPublished, dateRead }) => ({
+            links={books.map(({ title, author, yearPublished, dateRead, link }) => ({
               title: `<i>${title}</i>`,
               subtitle: ` by ${author} (${yearPublished})`,
               date: dateRead,
+              to: link
             }))}
           />
         </div>
