@@ -4,7 +4,7 @@ import SamLink from "@/components/SamLink";
 export default function VideoGames() {
   return (
     <LibraryPage
-      title="Video Games"
+      title="Video games"
       subtitle="Artful distraction magnets."
     >
       <article>
