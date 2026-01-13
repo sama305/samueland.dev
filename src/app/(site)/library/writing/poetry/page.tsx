@@ -12,7 +12,7 @@ export default function Poetry() {
   }))
 
   return (
-    <LibraryPage subtitle={`The mother of literacy.`}>
+    <LibraryPage title="Poetry" subtitle="The mother of literacy.">
       <article>
         <p><strong>Poetry</strong> is an ancient art of language; in it, language’s rhythmic and aesthetic qualities are used to evoke unnamed emotions and subtle ideas. It has a long history of use by humans; so long, in fact, that it may even predate literacy.</p>
         <p>In my spare time, I enjoy writing poems. My poems are quite amateur, but I enjoy the process of writing enough to ignore this. In my experience, writing poetry is among the most accessible, simple, and natural forms of expression. No need for fancy tools or extensive knowledge; a piece of paper and a pen will suffice. In some cases even those may not be necessary.</p>

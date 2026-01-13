@@ -22,55 +22,6 @@ export const mainNavbarLinks: Array<LinkListEntry> = [
   }
 ]
 
-interface Map {
-  [key: string]: {
-    path: string,
-    label: string
-  }
-}
-
-export const libraryDict: Map = {
-  "library": {
-    path: "/",
-    label: "The Library"
-  },
-  "books": {
-    path: "/books",
-    label: "Books"
-  },
-  "poetry": {
-    path: "/writing/poetry",
-    label: "Poetry"
-  },
-  "games": {
-    path: "/games",
-    label: "PICO-8"
-  },
-  "philosophy": {
-    path: "/philosophy",
-    label: "Philosophy"
-  },
-  "meaning": {
-    path: "/philosophy/meaning",
-    label: "Meaning of Life"
-  },
-  "read": {
-    path: "/books/read",
-    label: "Reading"
-  },
-  "writing": {
-    path: "/writing",
-    label: "Writing"
-  },
-  // "Music": "/music",
-  // "Nature": `/nature`,
-  // "Cooking": `/cooking`,
-  // "Gaming": `/gaming`,
-  // "Coding": `/coding`,
-  // "Writing": `/writing`
-}
-
-
 /* Game page */
 export const gameList: Array<LinkListEntry> = [
   {

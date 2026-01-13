@@ -2,7 +2,7 @@ import LibraryPage from "@/components/LibraryPage";
 
 export default function Meaning() {
   return (
-    <LibraryPage subtitle='“Yesterday is dead; moment of silence.”—K. West'>
+    <LibraryPage title="Meaning of Life" subtitle='“Yesterday is dead; moment of silence.”—K. West'>
       <article>
         <p>In the past, when the question of the <strong>meaning</strong> has come up, I've always felt I was kidding myself. Given my age and lack of life experience, how could I possibly know?</p>
         <p>Not only that, even if I <i>thought</i> I knew what the meaning of life was, how could I be sure enough to declare it? As a result, I've given up trying to answer this question; there's no guarantee of a meaning, and if there is, there's no guarantee its knowable. And let's just say for a moment it is both real and knowable: is it even worth knowing? It's more trouble than its worth, in my opinion.</p>

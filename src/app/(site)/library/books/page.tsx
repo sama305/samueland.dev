@@ -4,7 +4,10 @@ import Link from "next/link"
 
 export default function Books() {
   return (
-    <LibraryPage subtitle={`"I cannot sleep unless I am surrounded by books"—Borges`}>
+    <LibraryPage
+      title="Books"
+      subtitle={`"I cannot sleep unless I am surrounded by books"—Borges`}
+    >
       <article>
         <p>A <strong>book</strong> is a collection of words (usually binded between two covers or packaged digitally) which attempts to express an idea or story. As opposed to papers and pamphlets, which hold a small amount of words, books tend to have words numbering in the tens if not hundreds of thousands.</p>
         <p>Broadly, a book can be fiction (of <i>unreality</i>) or non-fiction (of <i>reality</i>). They are written by one or more authors and allow humans to capture and transmit information more efficiently and deeply than any other medium.</p>

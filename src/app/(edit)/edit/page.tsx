@@ -96,8 +96,7 @@ export default function Edit() {
           <LibraryPage
             title={title}
             subtitle={subtitle}
-            returnLabel={returnLabel}
-            returnLink={"javascript:void(0)"}
+            returnLink={{ to: "javascript:void(0)", label: returnLabel }}
           >
             {mdxSource && <MDXRemote {...mdxSource}/>}
           </LibraryPage>
@@ -106,8 +105,7 @@ export default function Edit() {
             title={title}
             subtitle={subtitle}
             html={body}
-            returnLabel={returnLabel}
-            returnLink={"javascript:void(0)"}
+            returnLink={{ to: "javascript:void(0)", label: returnLabel }}
           />
         )}
       </div>

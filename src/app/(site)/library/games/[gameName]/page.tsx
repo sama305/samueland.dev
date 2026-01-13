@@ -11,7 +11,7 @@ export default async function GamePage({ params }: GameParams) {
   const { gameName } = await params
 
   return (
-    <LibraryPage noTitle={true}>
+    <LibraryPage returnLink={{ label: 'Other PICO-8 games', to: '/library/games' }}>
       <PicoGame gameName={gameName} />
     </LibraryPage>
   )

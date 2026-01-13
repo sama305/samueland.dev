@@ -1,17 +1,23 @@
-"use client";
-
-import { libraryBaseUrl, libraryDict } from "@/lib/navlists";
+import { libraryBaseUrl } from "@/lib/navlists";
+import fs from 'fs';
+import path from 'path';
 
 export default function Misc() {
+  const libraryPath = path.join(process.cwd(), '/src/app/\(site\)/library');
+  const entries = fs.readdirSync(libraryPath, { withFileTypes: true });
+  const directories = entries
+    .filter((entry) => entry.isDirectory())
+    .map((entry) => entry.name);
+  
   return (
     <div style={{ display: "flex", gap: "1rem"}}>
       <div style={{ minWidth: "5.5rem", borderRight: "dotted 1px var(--header-line-color)" }}>
         <div className="navbar vnavbar">
           {/* if a path has 2 /'s, it isn't top level and thus shouldn't be displayed */}
-          {Object.keys(libraryDict).filter(k => libraryDict[k].path.split("/").length == 2).slice(1).map(k => (
+          {directories.map(k => (
             <a
               key={k}
-              href={`${libraryBaseUrl}${libraryDict[k].path}`}
+              href={`${libraryBaseUrl}/${k}`}
             >
               {k}
             </a>
