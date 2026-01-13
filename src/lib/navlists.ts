@@ -26,12 +26,12 @@ export const mainNavbarLinks: Array<LinkListEntry> = [
 export const gameList: Array<LinkListEntry> = [
   {
     title: "Dropper",
-    to: `${libraryBaseUrl}/games/dropper?trail=PICO-8`,
+    to: `${libraryBaseUrl}/games/dropper`,
     subtitle: ", simple little platformer (Feb 2025)"
   },
   {
     title: "Bucket-Ball",
-    to: `${libraryBaseUrl}/games/bucketball?trail=PICO-8`,
+    to: `${libraryBaseUrl}/games/bucketball`,
     subtitle: ", basketball-themed sports party game (2024)"
   },
 ]
@@ -39,37 +39,37 @@ export const gameList: Array<LinkListEntry> = [
 export const experimentsList: Array<LinkListEntry> = [
   {
     title: "Falling Sand",
-    to: `${libraryBaseUrl}/games/fallingsand?trail=PICO-8`,
+    to: `${libraryBaseUrl}/games/fallingsand`,
     subtitle: ", pixel-perfect physics sandbox (Apr 2024)"
   },
   {
     title: "V-Point",
-    to: `${libraryBaseUrl}/games/vpoint?trail=PICO-8`,
+    to: `${libraryBaseUrl}/games/vpoint`,
     subtitle: ", experimental art program"
   },
   {
     title: "PICO-Craft",
-    to: `${libraryBaseUrl}/games/picocraft?trail=PICO-8`,
+    to: `${libraryBaseUrl}/games/picocraft`,
     subtitle: ", mine and build in a 2D sandbox"
   },
   {
     title: "Ballpit",
-    to: `${libraryBaseUrl}/games/ballpit?trail=PICO-8`,
+    to: `${libraryBaseUrl}/games/ballpit`,
     subtitle: ", play with colorful physics balls"
   },
   {
     title: "Spaceship",
-    to: `${libraryBaseUrl}/games/spaceship?trail=PICO-8`,
+    to: `${libraryBaseUrl}/games/spaceship`,
     subtitle: ", infinite space flight (hint: hold X)"
   },
   {
     title: "Verlet Chain",
-    to: `${libraryBaseUrl}/games/verlet?trail=PICO-8`,
+    to: `${libraryBaseUrl}/games/verlet`,
     subtitle: ", showcase of verlet integration"
   },
   {
     title: "Fire",
-    to: `${libraryBaseUrl}/games/fire?trail=PICO-8`,
+    to: `${libraryBaseUrl}/games/fire`,
     subtitle: ", literally just a fire simulator"
   },
 ]

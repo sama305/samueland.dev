@@ -1,5 +1,5 @@
 import { DatedLinkListEntry } from "@/lib/types"
-import Link from "next/link"
+import SamLink from "./SamLink"
 
 interface LinkListProps {
   links: Array<DatedLinkListEntry>
@@ -30,7 +30,7 @@ export default function LinkList({ links }: LinkListProps) {
                 <li key={title}>
                   <span>
                     {to ? (
-                      <Link href={to} dangerouslySetInnerHTML={{ __html: title }}/>
+                      <SamLink href={to} dangerouslySetInnerHTML={{ __html: title }}/>
                     ) : (
                       <span dangerouslySetInnerHTML={{ __html: title }} />
                     )}

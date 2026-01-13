@@ -1,12 +1,12 @@
 import LibraryPage from "@/components/LibraryPage";
-import Link from "next/link";
+import SamLink from "@/components/SamLink";
 
 export default function Music() {
   return (
     <LibraryPage title="Music" subtitle="The universal language.">
       <article>
-        <p>Out of every art, <strong>music</strong> may be the most universal. Unlike most art forms, which are restricted to humans (such as <Link href="/library/writing">writing</Link>) or require deliberate practice (like painting), music is an art practiced not just by humans, not just by the animal kingdom, not even just practiced by living things, but potentially <em>everything in the universe</em>.</p>
-        <p>Though it is important to clarify that <em>sound</em> and by extension <em>music</em> are the result of our ears receiving <Link href="https://en.wikipedia.org/wiki/Acoustic_wave">acoustic waves</Link> brains perceiving, so though all things <em>produce</em> music, not all things (not even all animals) necessarily <em>consume</em> music. But that all things are artists, to me, remains an interesting feat.</p>
+        <p>Out of every art, <strong>music</strong> may be the most universal. Unlike most art forms, which are restricted to humans (such as <SamLink href="/library/writing">writing</SamLink>) or require deliberate practice (like painting), music is an art practiced not just by humans, not just by the animal kingdom, not even just practiced by living things, but potentially <em>everything in the universe</em>.</p>
+        <p>Though it is important to clarify that <em>sound</em> and by extension <em>music</em> are the result of our ears receiving <SamLink href="https://en.wikipedia.org/wiki/Acoustic_wave">acoustic waves</SamLink> and our brains perceiving it, so though all things <em>produce</em> music, not all things (not even all animals) necessarily <em>consume</em> music. But that all things are artists, to me, remains an interesting feat.</p>
 
         <h2>Songwriting</h2>
 

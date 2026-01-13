@@ -1,8 +1,8 @@
 import { getAllPoems } from "@/lib/poems"
 import { DatedLinkListEntry } from "@/lib/types"
-import Link from "next/link"
 import LibraryPage from "@/components/LibraryPage"
 import { libraryBaseUrl } from "@/lib/navlists"
+import SamLink from "@/components/SamLink"
 
 export default function Poetry() {
   const poems: Array<DatedLinkListEntry> = getAllPoems().map(({ metadata, slug }) => ({
@@ -25,7 +25,7 @@ export default function Poetry() {
           {poems.map(({ title, to, date }) => (
             <div className="blogEntry" key={title}>
               <div style={{ minWidth: "5.6rem" }}>{date}</div>
-              <Link href={`${libraryBaseUrl}/${to}?trail=Poetry`}>{title}</Link>
+              <SamLink href={`${libraryBaseUrl}/${to}`}>{title}</SamLink>
             </div>
           ))}
         </div>

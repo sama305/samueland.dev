@@ -1,5 +1,5 @@
 import { LinkListEntry } from "@/lib/types"
-import Link from "next/link"
+import SamLink from "./SamLink"
 
 interface LinkListProps {
   links: Array<LinkListEntry>
@@ -10,7 +10,7 @@ export default function LinkList({ links }: LinkListProps) {
     <ul>
       {links.map(({ title, subtitle, to }) => (
         <li key={to}>
-          <span><Link href={to}>{title}</Link>{subtitle ? subtitle : ''}</span>
+          <span><SamLink href={to}>{title}</SamLink>{subtitle ? subtitle : ''}</span>
         </li>
       ))}
     </ul>
