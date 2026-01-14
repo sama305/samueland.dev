@@ -12,7 +12,7 @@ export default function Coding() {
         <h3>JavaScript</h3>
         
         <p>I know many languages, but TypeScript I know best. I grew up with JavaScript and it was natural once I discovered TypeScript to commit myself totally to it; additionally, my internship during college had me coding TypeScript through Vue and later Nuxt.</p>
-        <p>What can I say about this language that hasn't already been said? It is good enough at what it does, easy enough to write, and widespread enough to make it a no-brainer language to choose when making applications on the web. More than anything it is <em>loyal</em>.</p>
+        <p>What can I say about this language that hasn't already been said? It is good enough at what it does, easy enough to write, and widespread enough to make it a no-brainer language to choose when making applications on the web.</p>
 
         <h3>C and C++</h3>
         
