@@ -30,6 +30,7 @@ html {
 
 .blogEntry {
   display: flex;
+  align-items: baseline;
 }
 
 .blogImg {
@@ -265,12 +266,16 @@ hr {
 }
 
 pre {
-  font-family: ui-monospace, 'Cascadia Code', 'Source Code Pro', Menlo, Consolas, monospace;
-  font-size: 0.8em;
   background-color: white;
   padding: 0.5rem;
   overflow: scroll;
   border: 1px dotted var(--header-line-color)
+}
+
+code, pre {
+  font-family: ui-monospace, 'Cascadia Code', 'Source Code Pro', Menlo, Consolas, monospace;
+  font-size: 0.9em;
+  /* vertical-align: bottom; */
 }
 
 textarea {
