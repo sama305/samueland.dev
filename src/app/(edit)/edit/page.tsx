@@ -4,6 +4,9 @@ import { useEffect, useState } from "react"
 import LibraryPage from "@/components/LibraryPage"
 import { MDXRemote, MDXRemoteProps } from 'next-mdx-remote'
 import { serialize } from "next-mdx-remote/serialize"
+import { renderToStaticMarkup } from "react-dom/server"
+import SamLink from "@/components/SamLink"
+import { html as beautifyHtml } from "js-beautify"
 
 export default function Edit() {
   const [body, setBody] = useState("<article>\n</article>")
@@ -11,7 +14,6 @@ export default function Edit() {
   const [subtitle, setSubtitle] = useState("Something witty.")
   const [returnLabel, setReturnLabel] = useState("← Go back 'Home'")
 
-  const [useMarkdown, setUseMarkdown] = useState(false)
   const [mdxSource, setMdxSource] = useState<MDXRemoteProps | null>(null)
   const [errorMessage, setErrorMessage] = useState<string | null>(null)
 
@@ -45,11 +47,12 @@ export default function Edit() {
     })()
   }, [body])
 
-
-  const handleToggleMarkdown = (e: React.ChangeEvent<HTMLInputElement>) => {
-    const markdownSetting = e.target.value === "true"
-    setUseMarkdown(markdownSetting);
-  };
+  const htmlString = mdxSource ?
+    beautifyHtml(renderToStaticMarkup(<MDXRemote {...mdxSource} />)
+      .replaceAll("<a ", "<SamLink ")
+      .replaceAll("</a>", "</SamLink>")
+    )
+    : null;
 
   return (
     <div style={{ display: "flex", justifyContent: "center", gap: "1.5rem" }}>
@@ -58,56 +61,30 @@ export default function Edit() {
         <input value={subtitle} onChange={(e) => setSubtitle(e.target.value)}/>
         <input value={returnLabel} onChange={(e) => setReturnLabel(e.target.value)}/>
 
-        <div style={{ display: "flex", gap: "1rem" }}>
-          <label style={{ display: "flex", gap: "0.25rem" }}>
-            <input
-              type="radio"
-              name="notification-toggle"
-              value="false"
-              checked={useMarkdown === false}
-              onChange={handleToggleMarkdown}
-            />
-            HTML
-          </label>
-
-          <label style={{ display: "flex", gap: "0.25rem" }}>
-            <input
-              type="radio"
-              name="notification-toggle"
-              value="true"
-              checked={useMarkdown === true}
-              onChange={handleToggleMarkdown}
-            />
-            Markdown
-          </label>
-        </div>
-
         <textarea
           style={{ minWidth: "100%", maxWidth: "100%", height: "12rem" }}
           value={body} onChange={(e) => setBody(e.target.value)}
         />
-        {useMarkdown && errorMessage && (
+        {errorMessage && (
           <div><strong>Error</strong>: {errorMessage}</div>
         )}
+
+        <article>
+          <h3>Output</h3>
+          <pre>
+            {htmlString}
+          </pre>
+        </article>
       </div>
 
       <div style={{ flexGrow: "2", maxWidth: "36rem"}}>
-        {useMarkdown ? (
-          <LibraryPage
-            title={title}
-            subtitle={subtitle}
-            returnLink={{ to: "javascript:void(0)", label: returnLabel }}
-          >
-            {mdxSource && <MDXRemote {...mdxSource}/>}
-          </LibraryPage>
-        ) : (
-          <LibraryPage
-            title={title}
-            subtitle={subtitle}
-            html={body}
-            returnLink={{ to: "javascript:void(0)", label: returnLabel }}
-          />
-        )}
+        <LibraryPage
+          title={title}
+          subtitle={subtitle}
+          returnLink={{ to: "javascript:void(0)", label: returnLabel }}
+        >
+          {mdxSource && <MDXRemote {...mdxSource} components={{ a: SamLink }}/>}
+        </LibraryPage>
       </div>
     </div>
   )

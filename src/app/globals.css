@@ -106,6 +106,10 @@ article {
   h2 {
     border-bottom: dotted 1px var(--header-line-color)
   }
+
+  pre {
+    margin-bottom: 1rem;
+  }
 }
 
 /* SITE STYLING 2.0 */
@@ -256,4 +260,13 @@ hr {
   border: none;
   border-top: 1px dotted var(--header-line-color);
   margin: 1rem 0;
+}
+
+pre {
+  font-family: ui-monospace, 'Cascadia Code', 'Source Code Pro', Menlo, Consolas, monospace;
+  font-size: 0.8em;
+  background-color: white;
+  padding: 0.5rem;
+  overflow: scroll;
+  border: 1px dotted var(--header-line-color)
 }
