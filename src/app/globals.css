@@ -13,12 +13,14 @@ html {
   --header-line-color: #a1a1a1;
 
   color: var(--text-color);
+  box-sizing: border-box;
 }
 
 * {
   margin: 0;
   padding: 0;
   line-height: 1.6;
+  box-sizing: inherit;
 }
 
 /* Misc */
@@ -269,4 +271,8 @@ pre {
   padding: 0.5rem;
   overflow: scroll;
   border: 1px dotted var(--header-line-color)
+}
+
+textarea {
+  padding-left: 0.2rem
 }
