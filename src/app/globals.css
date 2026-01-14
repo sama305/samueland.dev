@@ -4,7 +4,7 @@ html {
   scrollbar-gutter: stable;
   font-size: 18px;
 
-  background-color: #f9f5ea;
+  --background-color: #f9f5ea;
   /* font-smooth: never; */
   /* -webkit-font-smoothing: none */
 
@@ -13,6 +13,7 @@ html {
   --header-line-color: #a1a1a1;
 
   color: var(--text-color);
+  background-color: var(--background-color);
   box-sizing: border-box;
 }
 
@@ -82,8 +83,11 @@ ul {
     --text-color: #fff;
     --header-line-color: #fff;
     --link-color: #4d8aed;
-    background: #141006;
-    color: var(--text-color);
+    --background-color: black;
+  }
+
+  pre {
+    background-color: var(--background-color);
   }
 }
 
@@ -275,7 +279,6 @@ pre {
 code, pre {
   font-family: ui-monospace, 'Cascadia Code', 'Source Code Pro', Menlo, Consolas, monospace;
   font-size: 0.9em;
-  /* vertical-align: bottom; */
 }
 
 textarea {
