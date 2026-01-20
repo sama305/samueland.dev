@@ -6,6 +6,7 @@ export default function MusicTaste() {
       <article>
         <p>My <strong>taste in music</strong> has evolved over my life, but has always been defined by my love for songwriting and exploration. I enjoy a variety of genres, but I tend to find myself coming back to folk and all the permutations of rock. Specifically rock from the 60s, 70s, and 90s. This wasn't a conscious decision; these decades simply tend to pique my interest more than others, so I listen to them the most.</p>
 
+        <h2>Genres</h2>
         <h3>Folk and rock</h3>
 
         <p>My favorite artists of these style are Neil Young, Bob Dylan, the Beatles, the Beach Boys, to name a few. Neil and Bob are probably my all time most listened to artists, though I've been listening to the Beatles and Beach Boys since high school so perhaps they are higher.</p>
