@@ -1,6 +1,6 @@
 "use client"
 
-import { useEffect, useState } from "react"
+import { useEffect, useRef, useState } from "react"
 import LibraryPage from "@/components/LibraryPage"
 import { MDXRemote, MDXRemoteProps } from 'next-mdx-remote'
 import { serialize } from "next-mdx-remote/serialize"
@@ -54,9 +54,34 @@ export default function Edit() {
     )
     : null;
 
+  const previewRef = useRef<HTMLDivElement | null>(null)
+
+  useEffect(() => {
+    if (!previewRef.current) return
+
+    previewRef.current.scrollTo({
+      top: previewRef.current.scrollHeight,
+      behavior: "auto", // or "smooth" if you want
+    })
+  }, [body])
+
   return (
-    <div style={{ display: "flex", justifyContent: "center", gap: "1.5rem" }}>
-      <div style={{ maxWidth: "36rem", width: "28rem", display: "flex", flexDirection: "column", gap: "1rem", paddingRight: "1.5rem", borderRight: "dotted 1px var(--header-line-color)" }}>
+    <div style={{ display: "flex", padding: "1rem 0", height: "100vh", overflowY: "scroll", justifyContent: "center", gap: "1.5rem" }}>
+      <div
+          style={{
+          position: "sticky",
+          top: "2rem",
+          maxWidth: "36rem",
+          width: "28rem",
+          display: "flex",
+          flexDirection: "column",
+          gap: "1rem",
+          paddingRight: "1.5rem",
+          borderRight: "dotted 1px var(--header-line-color)",
+          alignSelf: "flex-start",
+          flexShrink: 0,
+        }}
+      >
         <input value={title} onChange={(e) => setTitle(e.target.value)}/>
         <input value={subtitle} onChange={(e) => setSubtitle(e.target.value)}/>
         <input value={returnLabel} onChange={(e) => setReturnLabel(e.target.value)}/>
@@ -77,7 +102,15 @@ export default function Edit() {
         </article>
       </div>
 
-      <div style={{ flexGrow: "2", maxWidth: "36rem"}}>
+      <div
+        ref={previewRef}
+        style={{
+          flexGrow: "2",
+          maxWidth: "36rem",
+          maxHeight: "calc(100vh - 4rem)",
+          overflowY: "auto",
+        }}
+      >
         <LibraryPage
           title={title}
           subtitle={subtitle}

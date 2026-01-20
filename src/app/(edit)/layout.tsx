@@ -17,16 +17,9 @@ export default function EditLayout({
 
   return (
     <html lang="en">
-      <body>
+      <body style={{height: "100vh", overflowY: "scroll",}}>
         <div className="edit-main">
-          <div className="site-header">
-            <h2>
-              &#10042; samueland 
-            </h2>
-            <Navbar links={mainNavbarLinks}/>
-          </div>
           {children}
-          <Footer />
           <script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "fe8275266cbb47ba94f4dbee1cf17645"}'></script>
         </div>
       </body>
