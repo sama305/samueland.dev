@@ -116,6 +116,10 @@ article {
     border-bottom: dotted 1px var(--header-line-color)
   }
 
+  h2:first-child, h3:first-child {
+    padding-top: 0;
+  }
+
   pre {
     margin-bottom: 1rem;
   }
