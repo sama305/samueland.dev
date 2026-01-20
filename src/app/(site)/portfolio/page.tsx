@@ -54,7 +54,7 @@ export default function Projects() {
           </div>
           <article>
             <p>
-              <SamLink className="social" href="https://librewrite.com" target="_blank">Librewrite.com</SamLink> is a free webapp for practicing creative writing. It facilitates the practice of <i>free writing</i>, a writing exercise where you write nonstop for a set amount of time, sometimes working from a prompt.
+              <SamLink className="social" href="/library/software/librewrite" target="_blank">Librewrite.com</SamLink> is a free webapp for practicing creative writing. It facilitates the practice of <i>free writing</i>, a writing exercise where you write nonstop for a set amount of time, sometimes working from a prompt.
             </p>
             <p>
               Just as in free writing, you can write within timed, configurable rounds with optional prompts for a greater challenge. After the round, your written work is saved and be viewed, edited, or shared.

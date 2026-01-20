@@ -5,7 +5,7 @@ export default function Coding() {
   return (
     <LibraryPage title="Software" subtitle="This website!">
       <article>
-        <p><strong>Software</strong> is a combination of programs, data, and instructions which collectively tell a computer's hardware what to do. I make software at my <SamLink href="https://www.educationalnetworks.net/">job</SamLink> and in my <SamLink href="https://github.com/sama305">free time</SamLink>.</p>
+        <p><strong>Software</strong> is a combination of programs, data, and instructions which collectively tell a computer's hardware what to do. I make software at my <SamLink href="https://www.educationalnetworks.net/">job</SamLink> and in my <SamLink href="https://github.com/sama305">free time</SamLink>. For example, I made <SamLink href="/library/software/librewrite">librewrite.com</SamLink> and this site, among other things.</p>
 
         <h2>Languages I use</h2>
 
