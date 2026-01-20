@@ -1,8 +1,5 @@
 import type { Metadata } from "next";
 import "../globals.css";
-import Navbar from "@/components/Navbar";
-import { mainNavbarLinks } from "@/lib/navlists";
-import Footer from "@/components/Footer";
 
 export const metadata: Metadata = {
   title: "samueland.dev",
