@@ -98,7 +98,7 @@ article {
     margin-bottom: 1.25rem;
   }
 
-  p:has(+ h2, + h3) {
+  p:has(+ h2, + h3, + h4) {
     margin-bottom: 0.25rem;
   }
 
@@ -106,7 +106,7 @@ article {
     line-height: 1.5; 
   }
 
-  h1, h2, h3 {
+  h1, h2, h3, h4 {
     margin: 0.5rem 0;
     padding-top: 1rem;
   }
@@ -134,12 +134,16 @@ article {
   padding: 1.5rem;
 }
 
-h1, h2, h3 {
+h1, h2, h3, h4 {
   font-family: "Helvetica Neue", sans-serif;
 }
 
 h2, h3 {
   line-height: 1.5;
+}
+
+h2 + h3 {
+  padding-top: 0.5rem; 
 }
 
 h1 {
