@@ -3,7 +3,7 @@ import { stringToDateString } from "@/lib"
 import { MDXRemote } from 'next-mdx-remote/rsc'
 import { notFound } from 'next/navigation'
 import LibraryPage from '@/components/LibraryPage'
-import SamLink from '@/components/SamLink'
+import { mdxComponents } from '@/lib/navlists'
 
 interface BlogPostParams {
   params: Promise<{
@@ -28,7 +28,7 @@ export default async function BlogPostPage({ params }: BlogPostParams) {
       returnLink={{ to: "/blog", label: "&larr; Other blog posts" }}
     >
       <article>
-        <MDXRemote source={post.content} components={{ a: SamLink }}/>
+        <MDXRemote source={post.content} components={mdxComponents}/>
       </article>
     </ LibraryPage>
   )

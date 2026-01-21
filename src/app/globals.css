@@ -294,3 +294,8 @@ code, pre {
 textarea {
   padding-left: 0.2rem
 }
+
+.custom-header:hover {
+  cursor: pointer;  
+  text-decoration: underline;
+}

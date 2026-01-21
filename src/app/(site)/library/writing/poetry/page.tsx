@@ -1,3 +1,5 @@
+import H2 from "@/components/H2";
+
 import { getAllPoems } from "@/lib/poems"
 import { DatedLinkListEntry } from "@/lib/types"
 import LibraryPage from "@/components/LibraryPage"
@@ -19,7 +21,7 @@ export default function Poetry() {
         <p>The important thing is to allow yourself to write freely. Once you find your groove, words will spill from your mind like a waterfall and you’ll read over your hard work with pride. I find it very rewarding.</p>
 
 
-        <h2>Assorted poems</h2>
+        <H2>Assorted poems</H2>
         <p>All of these were written by me. In the future, I might try to keep a list of poems by others I've enjoyed.</p>
         <div>
           {poems.map(({ title, to, date }) => (

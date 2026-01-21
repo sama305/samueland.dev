@@ -1,4 +1,8 @@
+import SamLink from "@/components/SamLink"
 import { LinkListEntry } from "./types"
+import H2 from "@/components/H2"
+import H3 from "@/components/H3"
+import H4 from "@/components/H4"
 
 export const libraryBaseUrl = "/library"
 
@@ -432,3 +436,10 @@ export const books: Array<{
     dateRead: "Oct 2022"
   },
 ]
+
+export const mdxComponents = {
+  a: SamLink,
+  h2: H2,
+  h3: H3,
+  h4: H4
+}

@@ -2,6 +2,7 @@ import { MDXRemote } from 'next-mdx-remote/rsc'
 import { notFound } from 'next/navigation'
 import { getAllPoemSlugs, getPoemBySlug } from '@/lib/poems'
 import LibraryPage from '@/components/LibraryPage'
+import { mdxComponents } from '@/lib/navlists'
 
 interface PoemParams {
   params: Promise<{
@@ -25,7 +26,7 @@ export default async function PoemPage({ params }: PoemParams) {
       subtitle={poem.metadata.date ? `${poem.metadata.date}` : undefined}
     >
       <article>
-        <MDXRemote source={poem.content} />
+        <MDXRemote source={poem.content} components={mdxComponents}/>
       </article>
     </LibraryPage>
   )

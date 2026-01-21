@@ -7,6 +7,7 @@ import { serialize } from "next-mdx-remote/serialize"
 import { renderToStaticMarkup } from "react-dom/server"
 import SamLink from "@/components/SamLink"
 import { html as beautifyHtml } from "js-beautify"
+import { mdxComponents } from "@/lib/navlists"
 
 export default function Edit() {
   const [body, setBody] = useState("<article>\n</article>")
@@ -51,6 +52,14 @@ export default function Edit() {
     beautifyHtml(renderToStaticMarkup(<MDXRemote {...mdxSource} />)
       .replaceAll("<a ", "<SamLink ")
       .replaceAll("</a>", "</SamLink>")
+      .replaceAll("<h1", "<H1")
+      .replaceAll("</h1>", "</H1>")
+      .replaceAll("<h2", "<H2")
+      .replaceAll("</h2>", "</H2>")
+      .replaceAll("<h3", "<H3")
+      .replaceAll("</h3>", "</H3>")
+      .replaceAll("<h4", "<H4")
+      .replaceAll("</h4>", "</H4>")
     )
     : null;
 
@@ -136,7 +145,7 @@ export default function Edit() {
           subtitle={subtitle}
           returnLink={{ to: "javascript:void(0)", label: returnLabel }}
         >
-          {mdxSource && <MDXRemote {...mdxSource} components={{ a: SamLink }}/>}
+          {mdxSource && <MDXRemote {...mdxSource} components={mdxComponents}/>}
         </LibraryPage>
       </div>
     </div>
