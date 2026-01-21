@@ -82,6 +82,13 @@ export const books: Array<{
   link?: string
 }> = [
   {
+    title: "We",
+    author: "Yevgeny Zamyatin",
+    yearPublished: "1924",
+    dateRead: "Jan 2026",
+    link: "/blog/2026-01-21-we"
+  },
+  {
     title: "The Plague",
     author: "Albert Camus",
     yearPublished: "1947",
