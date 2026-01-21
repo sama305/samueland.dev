@@ -56,14 +56,32 @@ export default function Edit() {
 
   const previewRef = useRef<HTMLDivElement | null>(null)
 
-  useEffect(() => {
-    if (!previewRef.current) return
+  const editorRef = useRef<HTMLTextAreaElement | null>(null);
 
-    previewRef.current.scrollTo({
-      top: previewRef.current.scrollHeight,
-      behavior: "auto", // or "smooth" if you want
-    })
-  }, [body])
+  const syncPreviewScroll = () => {
+    if (!editorRef.current || !previewRef.current) return;
+
+    const { scrollTop, scrollHeight, clientHeight } = editorRef.current;
+  
+    const scrollPercentage = scrollTop / (scrollHeight - clientHeight);
+
+    const preview = previewRef.current;
+    const targetScroll = scrollPercentage * (preview.scrollHeight - preview.clientHeight);
+
+    preview.scrollTo({
+      top: targetScroll,
+      behavior: "auto",
+    });
+  };
+
+  const handleScroll = () => {
+    syncPreviewScroll();
+  };
+
+  useEffect(() => {
+    const timeoutId = setTimeout(syncPreviewScroll, 10);
+    return () => clearTimeout(timeoutId);
+  }, [body, mdxSource]);
 
   return (
     <div style={{ display: "flex", padding: "1rem 0", height: "100vh", overflowY: "scroll", justifyContent: "center", gap: "1.5rem" }}>
@@ -87,6 +105,8 @@ export default function Edit() {
         <input value={returnLabel} onChange={(e) => setReturnLabel(e.target.value)}/>
 
         <textarea
+          ref={editorRef} // 2. Attach the ref
+          onScroll={handleScroll} // 3. Listen for scroll events
           style={{ minWidth: "100%", maxWidth: "100%", height: "12rem" }}
           value={body} onChange={(e) => setBody(e.target.value)}
         />
