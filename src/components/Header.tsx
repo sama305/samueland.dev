@@ -18,7 +18,7 @@ export default function Header({ level = "1", children, className }: HeaderProps
 
   const Tag = `h${level}` as keyof JSX.IntrinsicElements
 
-  const handleCopy = (e: React.MouseEvent) => {
+  const handleCopy = () => {
     if (id) {
       window.history.pushState(null, '', `#${id}`);
       const element = document.getElementById(id);

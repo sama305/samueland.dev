@@ -5,7 +5,6 @@ import LibraryPage from "@/components/LibraryPage"
 import { MDXRemote, MDXRemoteProps } from 'next-mdx-remote'
 import { serialize } from "next-mdx-remote/serialize"
 import { renderToStaticMarkup } from "react-dom/server"
-import SamLink from "@/components/SamLink"
 import { html as beautifyHtml } from "js-beautify"
 import { mdxComponents } from "@/lib/navlists"
 
