@@ -10,7 +10,7 @@ export default function BlogPage() {
       <tbody>
         {posts.map(({ slug, metadata }) => (
           <tr key={slug}>
-            <td style={{ textAlign: "right", whiteSpace: "nowrap" }}><span style={{ marginRight: "1rem" }}>{stringToDateString(metadata.date)}</span></td>
+            <td style={{ verticalAlign: "top", textAlign: "right", whiteSpace: "nowrap" }}><span style={{ marginRight: "1rem" }}>{stringToDateString(metadata.date)}</span></td>
             <td><SamLink href={`/blog/${slug}`}>{metadata.title}</SamLink></td>
           </tr>
         ))}
