@@ -18,7 +18,6 @@ export default function Songs() {
       <article>
         <p>My biggest hobby by far is <strong>writing my own songs</strong>. Once I started doing it consistently, all other forms of writing more or less faded into the background and songwriting became my obsession. I don&#x27;t claim to be a master at songwriting, but it is my personal greatest talent.</p>
         <H2>List of songs</H2>
-        <p>Each of the songs on this list were written by me, and may contain lyrics and/or chords. The idea is to document only songs which I consider &quot;finished,&quot; though I&#x27;ll be the first to admit the definition changes over time.</p>
         <H3>Songs with lyrics</H3>
         <p>Note that, for many of these songs, the chords are only shown the first time a section appears. This is for the sake of readability; unless otherwise stated, subsequent instances of each section have the same chords. The date on the left reflects when it was first <em>created</em>, though many were updated later on.</p>
         <div>

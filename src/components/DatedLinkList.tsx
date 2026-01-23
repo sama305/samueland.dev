@@ -12,7 +12,7 @@ interface LinkListProps {
 
 function getMonthName(monthNumber: number) {
   const date = new Date();
-  date.setMonth(monthNumber - 1);
+  date.setMonth(monthNumber);
 
   const monthName = date.toLocaleString('default', { month: 'short' });
   

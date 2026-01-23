@@ -23,7 +23,7 @@ export default async function SongPage({ params }: SongParams) {
   return (
     <LibraryPage
       title={song.metadata.title}
-      subtitle={`Written ${song.metadata.date}${song.metadata.updateDate ? ", last updated " + song.metadata.updateDate : ""}`}
+      subtitle={`Conceived ${song.metadata.date}${song.metadata.updateDate ? ", last updated " + song.metadata.updateDate : ""}`}
       returnLink={{ to: `${libraryBaseUrl}/music/songs#songs-with-lyrics`, label: "&larr; Other songs" }}
     >
       <article>
