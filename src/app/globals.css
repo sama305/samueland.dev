@@ -220,7 +220,7 @@ h1 {
 
 @media (max-width: 47rem) {
   .main {
-    padding: 1.5rem;
+    padding: 1rem;
   }
   .content-cols {
     flex-direction: column;
