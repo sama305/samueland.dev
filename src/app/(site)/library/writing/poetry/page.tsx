@@ -9,7 +9,7 @@ import SamLink from "@/components/SamLink"
 export default function Poetry() {
   const poems: Array<DatedLinkListEntry> = getAllPoems().map(({ metadata, slug }) => ({
     title: metadata.title,
-    to: `/poetry/${slug}`,
+    to: `/writing/poetry/${slug}`,
     date: metadata.date
   }))
 
@@ -23,6 +23,7 @@ export default function Poetry() {
 
         <H2>Assorted poems</H2>
         <p>All of these were written by me. In the future, I might try to keep a list of poems by others I've enjoyed.</p>
+        <p>You may have noticed the poems seem to stop at June 2025. The reason is this was around the time when I began to start writing songs a lot more. Thus, these days, the "poetry" I write tends to just be <SamLink href="/library/music/songs#songs-with-lyrics">my own songs</SamLink></p>
         <div>
           {poems.map(({ title, to, date }) => (
             <div className="blogEntry" key={title}>

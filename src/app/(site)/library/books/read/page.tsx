@@ -11,6 +11,7 @@ export default function ReadBooks() {
         <hr />
         <div>
           <DatedLinkList
+            h="3"
             links={books.map(({ title, author, yearPublished, dateRead, link }) => ({
               title: `<i>${title}</i>`,
               subtitle: ` by ${author} (${yearPublished})`,

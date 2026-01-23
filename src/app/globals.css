@@ -111,6 +111,10 @@ article {
     padding-top: 1rem;
   }
 
+  h4 {
+    padding-top: 0rem;
+  }
+
   h2 {
     padding-bottom: 0.3rem;
     border-bottom: dotted 1px var(--header-line-color)

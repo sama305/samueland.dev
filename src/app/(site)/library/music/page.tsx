@@ -9,11 +9,11 @@ export default function Music() {
     <LibraryPage title="Music" subtitle="The universal language.">
       <article>
         <p>Out of every art, <strong>music</strong> may be the most universal. Unlike most art forms, which are restricted to humans (such as <SamLink href="/library/writing">writing</SamLink>) or require deliberate practice (like painting), music is an art practiced not just by humans, not just by the animal kingdom, not even just practiced by living things, but potentially <em>everything in the universe</em>.</p>
-        <p>Though it is important to clarify that <em>sound</em> and by extension <em>music</em> are the result of our ears receiving <SamLink href="https://en.wikipedia.org/wiki/Acoustic_wave">acoustic waves</SamLink> and our brains perceiving it, so though all things <em>produce</em> music, not all things (not even all animals) necessarily <em>consume</em> music. But that all things are artists, to me, remains an interesting feat.</p>
+        <p>Though it is important to clarify that <em>sound</em> and by extension <em>music</em> are the result of our ears receiving <SamLink href="https://en.wikipedia.org/wiki/Acoustic_wave">acoustic waves</SamLink> and our brains perceiving it, so though all things <em>produce</em> music, not all things (not even all animals) necessarily <em>consume</em> music. But that all things are artists, to me, remains an interesting fact.</p>
 
         <H2>Songwriting</H2>
 
-        <p>One of my main hobbies these days is <strong>songwriting</strong>: crafting lyrics and tunes and combining them to create full songs. I have always played guitar and piano and enjoyed making small tunes, but I only started songwriting perhaps one year ago.</p>
+        <p>One of my main hobbies these days is <SamLink href="/library/music/songs">songwriting</SamLink>: crafting lyrics and tunes and combining them to create full songs. I have always played guitar and piano and enjoyed making small tunes, but I only started songwriting perhaps one year ago.</p>
         <p>Nervousness about my voice, about my lyrics, and about the difficulty of making music always made me avoid it; but once I  sat down, strummed some chords and wrote a few lyrics to go with them, I realized my fear was unfounded and it wasn't as scary as I had thought.</p>
         <p>Nowadays, I try to write all the time: in the morning, when I get back from work, and especially on the weekends. I've probably written over 50 songs, a few of which I've actually managed to record and mix.</p>
         <p>For the record, I am not a gear junkie: I use GarageBand as my DAW, a Blue Yeti for vocals and acoustic guitar, a small, unromantic $50 audio interface for electric guitar.</p>
