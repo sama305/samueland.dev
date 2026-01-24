@@ -11,8 +11,6 @@ import DatedLinkList from "@/components/DatedLinkList"
  * TODO
  *
  * Songs missing from list:
- * - Moby Dick (Jan or Mar 2025)
- * - Valentine (Feb 2025)
  * - Please, Please, Please (Jan 2025)
  * - Have You Seen the River (May 2023)
  * - Lockjaw John (Dec 2022)
@@ -42,7 +40,6 @@ import DatedLinkList from "@/components/DatedLinkList"
  *
  * Unfinished songs:
  * - Circles (May 2025)
- * - No Fear/Ants (May 2025)
  * - The Man with the Cigar (Sep 2025)
  * - The Saloon (Sep 2025)
  * - Do You Hear Me (Oct 2025)
