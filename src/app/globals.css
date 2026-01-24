@@ -284,10 +284,11 @@ hr {
 }
 
 pre {
-  background-color: white;
+  background-color: rgba(255, 255, 255, 0.5);
   padding: 0.5rem;
   overflow: scroll;
-  border: 1px dotted var(--header-line-color)
+  border: 1px dotted var(--header-line-color);
+  color: black;
 }
 
 code, pre {
