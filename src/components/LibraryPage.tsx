@@ -19,17 +19,11 @@ export default function LibraryPage({
 }>) {
   const path = usePathname().split("/").filter(v => v.length > 0)
 
-  const isInLibrary = !returnLink && path[0] === 'library'
+  const isInLibrary = !returnLink
 
   return (
     <div>
       <div className="library-page-header" style={title || subtitle ? { borderBottom: "solid 1px var(--header-line-color)"} : {}}>
-        <div className="title">
-          {title && (<h1>{title}</h1>)}
-          {subtitle && (
-            <span><i>{subtitle}</i></span>
-          )}
-        </div>
         <div className="link">
           {returnLink ? (
             <SamLink href={returnLink.to} dangerouslySetInnerHTML={{ __html: returnLink.label }}></SamLink>
@@ -47,7 +41,14 @@ export default function LibraryPage({
             </div>
           ))}
         </div>
+        <div className="title">
+          {title && (<h1 style={{ lineHeight: "2.2rem" }}>{title}</h1>)}
+          {subtitle && (
+            <span style={{ opacity: "70%" }}><i>{subtitle}</i></span>
+          )}
+        </div>
       </div>
+      <div style={{ borderBottom: "solid 1px var(--header-line-color)", marginBottom: "1.5rem"}}></div>
       {html ? (
         <div dangerouslySetInnerHTML={{ __html: html }} />
       ) : (

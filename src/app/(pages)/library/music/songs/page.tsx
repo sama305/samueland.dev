@@ -59,7 +59,7 @@ export default function Songs() {
   }))
 
   return (
-    <LibraryPage title="My songs" subtitle="Bread and butter.">
+    <LibraryPage title="My songs" subtitle="My bread and my butter.">
       <article>
         <p>My biggest hobby by far is <strong>writing my own songs</strong>. Once I started doing it consistently, all other forms of writing more or less faded into the background and songwriting became my obsession. I don&#x27;t claim to be a master at songwriting, but it is my personal greatest talent.</p>
         <H2>List of songs</H2>

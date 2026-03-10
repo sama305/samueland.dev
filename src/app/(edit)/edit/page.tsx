@@ -12,7 +12,6 @@ export default function Edit() {
   const [body, setBody] = useState("<article>\n</article>")
   const [title, setTitle] = useState("New page")
   const [subtitle, setSubtitle] = useState("Something witty.")
-  const [returnLabel, setReturnLabel] = useState("← Go back 'Home'")
 
   const [mdxSource, setMdxSource] = useState<MDXRemoteProps | null>(null)
   const [errorMessage, setErrorMessage] = useState<string | null>(null)
@@ -110,7 +109,6 @@ export default function Edit() {
       >
         <input value={title} onChange={(e) => setTitle(e.target.value)}/>
         <input value={subtitle} onChange={(e) => setSubtitle(e.target.value)}/>
-        <input value={returnLabel} onChange={(e) => setReturnLabel(e.target.value)}/>
 
         <textarea
           ref={editorRef} // 2. Attach the ref
@@ -142,7 +140,6 @@ export default function Edit() {
         <LibraryPage
           title={title}
           subtitle={subtitle}
-          returnLink={{ to: "javascript:void(0)", label: returnLabel }}
         >
           {mdxSource && <MDXRemote {...mdxSource} components={mdxComponents}/>}
         </LibraryPage>
