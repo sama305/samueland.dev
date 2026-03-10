@@ -11,7 +11,7 @@ export default function Footer() {
         <SamLink href="https://github.com/sama305" target="_blank">GitHub</SamLink>
         <span><a href="/samuel_morgan_anderson_resume.pdf" target="_blank">Résumé</a></span>
       </div>
-      <div>© 2025&ndash;2026</div>
+      <div style={{ color: "var(--secondary-text-color)"}}>© 2025&ndash;2026</div>
     </div>
   )
 }
