@@ -16,7 +16,13 @@ export default function Navbar({ className, links, vertical }: NavbarProps) {
   return (
     <nav className={(className ? className : "") + " navbar" + (vertical ? " vnavbar" : " hnavbar")}>
       {links.map(l => (
-        <SamLink key={l.title} href={l.to} className={l.to !== '/' && currentPage.includes(l.to) || l.to === currentPage ? 'selected' : ''}>{l.title}</SamLink>
+        <SamLink
+          key={l.title}
+          href={l.to}
+          className={l.to !== '/' && currentPage.includes(l.to) || l.to === currentPage ? 'selected' : ''}
+        >
+            {l.title}
+        </SamLink>
       ))}
     </nav>
   )

@@ -240,13 +240,15 @@ h1 {
   display: flex;
   gap: 1rem;
 
+  &.hnavbar {
+    a {
+      color: var(--secondary-text-color);
+    }
+  }
+
   &.vnavbar {
     flex-direction: column;
     gap: 0;
-  }
-
-  a {
-    color: var(--text-color);
   }
 }
 
