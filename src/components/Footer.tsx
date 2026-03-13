@@ -5,7 +5,7 @@ import SamLink from "./SamLink";
 export default function Footer() {
   return (
     <div className="footer content-cols">
-      <div className="socials">
+      <div className="socials navbar hnavbar">
         <SamLink href="mailto:andersonhenderson45@gmail.com" target="_blank">Email</SamLink>
         <SamLink href="https://www.linkedin.com/in/samuel-anderson-611488176/" target="_blank">LinkedIn</SamLink>
         <SamLink href="https://github.com/sama305" target="_blank">GitHub</SamLink>

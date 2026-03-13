@@ -44,11 +44,10 @@ export default function LibraryPage({
         <div className="title">
           {title && (<h1 style={{ lineHeight: "2.2rem" }}>{title}</h1>)}
           {subtitle && (
-            <span style={{ opacity: "70%" }}><i>{subtitle}</i></span>
+            <span style={{ color: "var(--secondary-text-color)" }}><i>{subtitle}</i></span>
           )}
         </div>
       </div>
-      <div style={{ borderBottom: "solid 1px var(--header-line-color)", marginBottom: "1.5rem"}}></div>
       {html ? (
         <div dangerouslySetInnerHTML={{ __html: html }} />
       ) : (
