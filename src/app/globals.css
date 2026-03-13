@@ -149,7 +149,7 @@ article {
 }
 
 h1, h2, h3, h4 {
-  font-family: "Helvetica Neue", sans-serif;
+  /* font-family: "Helvetica Neue", sans-serif; */
 }
 
 h2, h3 {
@@ -176,7 +176,7 @@ h1 {
   /* justify-content: space-between; */
   flex-direction: column;
   margin-bottom: 0.7rem;
-  gap: 2rem 0;
+  gap: 0.5rem 0;
   border-bottom: solid 1px var(--header-line-color);
   padding-bottom: 0.7rem;
   position: relative;
@@ -207,12 +207,12 @@ h1 {
   display: flex;
   justify-content: space-between;
   flex-direction: column;
-  gap: 0.25rem;
+  gap: 2rem;
 
   .title {
     display: flex;
     flex-direction: column;
-    gap: 1.5rem;
+    gap: 0.25rem;
   }
 
   border-bottom: solid 1px var(--header-line-color);
@@ -317,4 +317,15 @@ textarea {
 .custom-header:hover {
   cursor: pointer;  
   text-decoration: underline;
+}
+
+hr {
+    border: none;
+    text-align: center;
+}
+
+hr::after {
+    content: "∗∗∗";
+    font-size: 1.5em;
+    letter-spacing: 0.25em;
 }

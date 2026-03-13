@@ -41,12 +41,14 @@ export default function LibraryPage({
             </div>
           ))}
         </div>
-        <div className="title">
-          {title && (<h1 style={{ lineHeight: "2.2rem" }}>{title}</h1>)}
-          {subtitle && (
-            <span style={{ color: "var(--secondary-text-color)" }}><i>{subtitle}</i></span>
-          )}
-        </div>
+        {(title || subtitle) && (
+          <div className="title">
+            {title && (<h1 style={{ lineHeight: "2.2rem" }}>{title}</h1>)}
+            {subtitle && (
+              <span style={{ color: "var(--secondary-text-color)" }}><i>{subtitle}</i></span>
+            )}
+          </div>
+        )}
       </div>
       {html ? (
         <div dangerouslySetInnerHTML={{ __html: html }} />
